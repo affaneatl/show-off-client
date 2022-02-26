@@ -55,7 +55,7 @@ const ImageIconButton = styled(ButtonBase)(({ theme }) => ({
 
 const images = [
   {
-    url: 'https://cdn.pixabay.com/photo/2016/01/08/05/24/sunflower-1127174_150.jpg',
+    url: 'https://cdn.pixabay.com/user/2015/12/16/17-56-55-832_1200x800.jpg',
     title: 'Snorkeling',
     width: '40%',
   },

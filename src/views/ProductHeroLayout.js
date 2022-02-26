@@ -43,7 +43,7 @@ function ProductHeroLayout(props) {
         }}
       >
         <img
-          src="/static/themes/onepirate/productHeroWonder.png"
+          src="https://via.placeholder.com/250"
           alt="wonder"
           width="147"
           height="80"
