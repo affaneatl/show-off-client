@@ -23,17 +23,17 @@ function AppAppBar() {
             href="/premium-themes/onepirate/"
             sx={{ fontSize: 24 }}
           >
-            Listening Affan
+            Sample
           </Link>
           <Box sx={{ flex: 5, display: 'flex', justifyContent: 'flex-end' }}>
             <Link
               color="inherit"
               variant="h6"
               underline="none"
-              href="/premium-themes/onepirate/sign-in/"
+              href="/"
               sx={rightLink}
             >
-              {'Sign In'}
+              Home
             </Link>
             <Link
               variant="h6"
@@ -41,7 +41,7 @@ function AppAppBar() {
               href="/work-categories"
               sx={{ ...rightLink, color: 'secondary.main' }}
             >
-              Page Design Progress
+              CV
             </Link>
           </Box>
         </Toolbar>

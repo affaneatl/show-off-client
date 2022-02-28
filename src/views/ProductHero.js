@@ -2,7 +2,7 @@ import * as React from 'react';
 import Button from '../components/Button';
 import Typography from '../components/Typography';
 import ProductHeroLayout from './ProductHeroLayout';
-import backgroundImage from '../assets/backgroundImage.JPG';
+import backgroundImage from '../assets/backgroundImage.jpg';
 
 
 export default function ProductHero() {
@@ -29,7 +29,7 @@ export default function ProductHero() {
         variant="h5"
         sx={{ mb: 4, mt: { sx: 4, sm: 10 } }}
       >
-        Let me tell you a strory. I have no computer science degree
+        Let me tell you a strory.
       </Typography>
       <Button
         color="secondary"
@@ -39,7 +39,7 @@ export default function ProductHero() {
         href="/premium-themes/onepirate/sign-up/"
         sx={{ minWidth: 200 }}
       >
-        I want to listen
+        Register
       </Button>
       <Typography variant="body2" color="inherit" sx={{ mt: 2 }}>
         Discover the experience

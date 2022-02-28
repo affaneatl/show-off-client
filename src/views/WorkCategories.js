@@ -1,9 +1,10 @@
 import * as React from 'react';
+import AppAppBar from './AppAppBar';
 
 const WorkCategories = () => {
     return(
         <div>
-            WorkCategories
+            <AppAppBar/>
         </div>
     )
 }
