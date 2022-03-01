@@ -42,13 +42,7 @@ function ProductHeroLayout(props) {
           alignItems: 'center',
         }}
       >
-        <img
-          src="https://via.placeholder.com/250"
-          alt="wonder"
-          width="147"
-          height="80"
-        />
-        <ArrowDropDownCircleIcon/>
+       
         {children}
         <Box
           sx={{
@@ -61,11 +55,10 @@ function ProductHeroLayout(props) {
             opacity: 0.5,
             zIndex: -1,
           }}
-        />
+          />
         <Background sx={sxBackground} />
         <Box
-          component="img"
-          src="/static/themes/onepirate/productHeroArrowDown.png"
+          component={ArrowDropDownCircleIcon}
           height="16"
           width="12"
           alt="arrow down"

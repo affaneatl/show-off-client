@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
+import { green, grey, red, purple } from '@mui/material/colors';
 
 const ImageBackdrop = styled('div')(({ theme }) => ({
   position: 'absolute',
@@ -11,8 +12,8 @@ const ImageBackdrop = styled('div')(({ theme }) => ({
   right: 0,
   top: 0,
   bottom: 0,
-  background: '#000',
-  opacity: 0.5,
+  background: purple[900],
+  opacity: 0.8,
   transition: theme.transitions.create('opacity'),
 }));
 
@@ -21,7 +22,7 @@ const ImageIconButton = styled(ButtonBase)(({ theme }) => ({
   display: 'block',
   padding: 0,
   borderRadius: 0,
-  height: '40vh',
+  height: '20vh',
   [theme.breakpoints.down('md')]: {
     width: '100% !important',
     height: 100,
@@ -36,7 +37,8 @@ const ImageIconButton = styled(ButtonBase)(({ theme }) => ({
     opacity: 0,
   },
   '&:hover .imageTitle': {
-    border: '4px solid currentColor',
+    color: purple[900],
+    fontWeight: 500,
   },
   '& .imageTitle': {
     position: 'relative',
@@ -55,44 +57,44 @@ const ImageIconButton = styled(ButtonBase)(({ theme }) => ({
 
 const images = [
   {
-    url: 'https://cdn.pixabay.com/user/2015/12/16/17-56-55-832_1200x800.jpg',
-    title: 'Snorkeling',
-    width: '40%',
+    url: "https://images.unsplash.com/profile-1446404465118-3a53b909cc82?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=64&w=64&s=3ef46b07bb19f68322d027cb8f9ac99f",
+    title: ' OBD, Voice Call Broadcasting',
+    width: '25%',
   },
   {
     url: 'https://cdn.pixabay.com/photo/2016/01/08/05/24/sunflower-1127174_150.jpg',
-    title: 'Massage',
-    width: '20%',
+    title: ' SMS Gateway – Bulk SMS',
+    width: '25%',
   },
   {
     url: 'https://cdn.pixabay.com/photo/2016/01/08/05/24/sunflower-1127174_150.jpg',
-    title: 'Hiking',
-    width: '40%',
+    title: ' Customized Web Application',
+    width: '25%',
   },
   {
     url: 'https://cdn.pixabay.com/photo/2016/01/08/05/24/sunflower-1127174_150.jpg',
-    title: 'Tour',
-    width: '38%',
+    title: ' Service based Mobile Apps',
+    width: '25%',
   },
   {
     url: 'https://cdn.pixabay.com/photo/2016/01/08/05/24/sunflower-1127174_150.jpg',
-    title: 'Gastronomy',
-    width: '38%',
+    title: ' IT Consultancy',
+    width: '25%',
   },
   {
     url: 'https://cdn.pixabay.com/photo/2016/01/08/05/24/sunflower-1127174_150.jpg',
-    title: 'Shopping',
-    width: '24%',
+    title: ' Dynamic Web Site',
+    width: '25%',
   },
   {
     url: 'https://cdn.pixabay.com/photo/2016/01/08/05/24/sunflower-1127174_150.jpg',
-    title: 'Walking',
-    width: '50%',
+    title: ' IT Training',
+    width: '25%',
   },
   {
     url: 'https://cdn.pixabay.com/photo/2016/01/08/05/24/sunflower-1127174_150.jpg',
-    title: 'Fitness',
-    width: '50%',
+    title: ' LBS (Location Based Services)',
+    width: '25%',
   }
 ];
 
@@ -100,7 +102,7 @@ export default function ProductCategories() {
   return (
     <Container component="section" sx={{ mt: 8, mb: 4 }}>
       <Typography variant="h4" marked="center" align="center" component="h2">
-        What I want to be best at
+        Our Services
       </Typography>
       <Box sx={{ mt: 8, display: 'flex', flexWrap: 'wrap' }}>
         {images.map((image) => (
@@ -108,20 +110,9 @@ export default function ProductCategories() {
             key={image.title}
             style={{
               width: image.width,
+              border: '1px solid white'
             }}
           >
-            <Box
-              sx={{
-                position: 'absolute',
-                left: 0,
-                right: 0,
-                top: 0,
-                bottom: 0,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center 40%',
-                backgroundImage: `url(${image.url})`,
-              }}
-            />
             <ImageBackdrop className="imageBackdrop" />
             <Box
               sx={{
@@ -137,8 +128,8 @@ export default function ProductCategories() {
               }}
             >
               <Typography
-                component="h3"
-                variant="h6"
+                component="h6"
+                variant="h5"
                 color="inherit"
                 className="imageTitle"
               >

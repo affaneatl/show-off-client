@@ -14,14 +14,8 @@ export default function ProductHero() {
         backgroundPosition: 'center',
       }}
     >
-      {/* Increase the network loading priority of the background image. */}
-      <img
-        style={{ display: 'none' }}
-        src={backgroundImage}
-        alt="increase priority"
-      />
       <Typography color="inherit" align="center" variant="h2" marked="center">
-        Upgrade Everyday
+        EATL BANNER
       </Typography>
       <Typography
         color="inherit"
@@ -29,7 +23,7 @@ export default function ProductHero() {
         variant="h5"
         sx={{ mb: 4, mt: { sx: 4, sm: 10 } }}
       >
-        Let me tell you a strory.
+        Eatl eio ijo v s ijijejf jieoin jgoena osig neigeon nogenio angoei anint nsiht igsoln oingi 
       </Typography>
       <Button
         color="secondary"
