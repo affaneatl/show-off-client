@@ -7,11 +7,12 @@ import ProductValues from '../views/ProductValues';
 import ProductHowItWorks from '../views/ProductHowItWorks';
 import ProductCTA from '../views/ProductCTA';
 import AppAppBar from '../views/AppAppBar';
-
+import Example from '../components/Carousel'
 function Home() {
   return (
     <>
       <AppAppBar />
+      <Example/>
       <ProductHero />
       <ProductValues />
       <ProductCategories />
