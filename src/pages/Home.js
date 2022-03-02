@@ -13,12 +13,9 @@ function Home() {
     <>
       <AppAppBar />
       <Example/>
-      <ProductHero />
       <ProductValues />
       <ProductCategories />
       <ProductHowItWorks />
-      <ProductCTA />
-      <ProductSmokingHero />
       <AppFooter />
     </>
   );
