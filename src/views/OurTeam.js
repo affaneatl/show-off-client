@@ -12,7 +12,7 @@ const item = {
   px: 5,
 };
 
-function ProductValues() {
+function OurTeam() {
   return (
     <Box
       component="section"
@@ -32,7 +32,7 @@ function ProductValues() {
                 component="img"
                 src="https://via.placeholder.com/150"
                 alt="suitcase"
-                sx={{ height: 55 }}
+                sx={{ height: 100 }}
               />
               <Typography variant="h6" sx={{ my: 5 }}>
                 The best luxury hotels
@@ -88,4 +88,4 @@ function ProductValues() {
   );
 }
 
-export default ProductValues;
+export default OurTeam;
