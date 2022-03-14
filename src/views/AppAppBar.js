@@ -1,13 +1,13 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
-import AppBar from '../components/AppBar';
-import Toolbar from '../components/Toolbar';
-import logo from '../assets/eatl_logo.png'
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Link from "@mui/material/Link";
+import AppBar from "../components/AppBar";
+import Toolbar from "../components/Toolbar";
+import logo from "../assets/eatl_logo.png";
 const rightLink = {
   fontSize: 16,
-  color: 'common.black',
-  fontWeight: '500',
+  color: "common.black",
+  fontWeight: "500",
   ml: 3,
 };
 
@@ -21,11 +21,13 @@ function AppAppBar() {
             underline="none"
             color="inherit"
             href="/"
-            sx = {{flex: 2}}
+            sx={{ flex: 2 }}
           >
-            <img src={logo} style={{height: "50px"}}/>
+            <img src={logo} style={{ height: "50px" }} />
           </Link>
-          <Box sx={{ flex: 3, display: 'flex', justifyContent: 'space-around' }}>
+          <Box
+            sx={{ flex: 3, display: "flex", justifyContent: "space-around" }}
+          >
             <Link
               color="inherit"
               variant="p"
@@ -84,7 +86,7 @@ function AppAppBar() {
               variant="p"
               underline="none"
               href="/work-categories"
-              sx={{ ...rightLink, color: 'secondary.main' }}
+              sx={{ ...rightLink, color: "secondary.main" }}
             >
               Contact
             </Link>

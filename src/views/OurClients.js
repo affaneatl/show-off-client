@@ -9,10 +9,10 @@ const item = {
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  px: 5,
+  px: 1,
 };
 
-function OurTeam() {
+function OurClients() {
   return (
     <Box
       component="section"
@@ -25,8 +25,8 @@ function OurTeam() {
           alt="curvy lines"
           sx={{ pointerEvents: "none", position: "absolute", top: -180 }}
         />
-        <Grid container spacing={5}>
-          <Grid item xs={12} md={3}>
+        <Grid container spacing={2}>
+          <Grid item xs={12} md={2}>
             <Box sx={item}>
               <Box
                 component="img"
@@ -34,8 +34,8 @@ function OurTeam() {
                 alt="suitcase"
                 sx={{ height: 100 }}
               />
-              <Typography variant="h6" sx={{ my: 5 }}>
-                The best luxury hotels
+              <Typography variant="p" sx={{ my: 5 }}>
+                Ministry of Family and social walfare
               </Typography>
              
             </Box>
@@ -46,10 +46,10 @@ function OurTeam() {
                 component="img"
                 src="https://via.placeholder.com/150"
                 alt="graph"
-                sx={{ height: 55 }}
+                sx={{ height: 100 }}
               />
-              <Typography variant="h6" sx={{ my: 5 }}>
-                New experiences
+              <Typography variant="p" sx={{ my: 5 }}>
+                National board of Revneue
               </Typography>
              
             </Box>
@@ -60,10 +60,10 @@ function OurTeam() {
                 component="img"
                 src="https://via.placeholder.com/150"
                 alt="clock"
-                sx={{ height: 55 }}
+                sx={{ height: 100 }}
               />
-              <Typography variant="h6" sx={{ my: 5 }}>
-                Exclusive rates
+              <Typography variant="p" sx={{ my: 5 }}>
+                BGC trust medical College
               </Typography>
              
             </Box>
@@ -74,9 +74,9 @@ function OurTeam() {
                 component="img"
                 src="https://via.placeholder.com/150"
                 alt="clock"
-                sx={{ height: 55 }}
+                sx={{ height: 100 }}
               />
-              <Typography variant="h6" sx={{ my: 5 }}>
+              <Typography variant="p" sx={{ my: 5 }}>
                 Exclusive rates
               </Typography>
              
@@ -88,4 +88,4 @@ function OurTeam() {
   );
 }
 
-export default OurTeam;
+export default OurClients;

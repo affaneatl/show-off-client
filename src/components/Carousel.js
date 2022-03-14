@@ -1,7 +1,7 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel'
 import { Box } from '@mui/material'
-
+import backgroundImage from '../assets/backgroundImage.png'
 export default function Example(props)
 {
     const images = [
@@ -43,7 +43,7 @@ function Item(props)
 {
     return (
         <Box>
-            <img alt={props.item.title} src={props.item.url}/>
+            <img alt={props.item.title} src={backgroundImage} style={{width: '100%', height: '300px'}}/>
         </Box>
     )
 }

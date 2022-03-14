@@ -3,7 +3,7 @@ import ProductCategories from './views/ProductCategories';
 import ProductSmokingHero from './views/ProductSmokingHero';
 import AppFooter from './views/AppFooter';
 import ProductHero from './views/ProductHero';
-import OurTeam from './views/OurTeam';
+import OurClients from './views/OurClients';
 import ProductHowItWorks from './views/ProductHowItWorks';
 import ProductCTA from './views/ProductCTA';
 import AppAppBar from './views/AppAppBar';
