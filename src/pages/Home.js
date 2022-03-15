@@ -7,21 +7,27 @@ import OurClients from '../views/OurClients';
 import ProductHowItWorks from '../views/ProductHowItWorks';
 import ProductCTA from '../views/ProductCTA';
 import AppAppBar from '../views/AppAppBar';
-import Example from '../components/Carousel'
+import Header from '../components/Carousel'
 import AboutSection from '../views/AboutSection';
 import ProductSection from '../views/ProductSection';
+import NavBar from '../views/NavBar';
+import HeroSection from '../views/HeroSection';
+import Products from '../views/Products';
 
 function Home() {
   return (
     <>
-      <AppAppBar />
-      <Example/>
+    <NavBar/>
+    <Header/>
+    <HeroSection/>
+    <Products />
+      {/* <AppAppBar />
       <AboutSection/>
       <ProductSection/>
       <OurClients />
       <ProductCategories />
       <ProductHowItWorks />
-      <AppFooter />
+      <AppFooter /> */}
     </>
   );
 }

@@ -1,39 +1,17 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel'
-import { Box } from '@mui/material'
+import { Box , Container} from '@mui/material'
 import backgroundImage from '../assets/backgroundImage.png'
-export default function Example(props)
+export default function Header()
 {
-    const images = [
-        {
-          url: "https://res.cloudinary.com/dhijllt3x/image/upload/v1646199901/file-upload/Untitled-1_jidhve.png",
-          title: ' OBD, Voice Call Broadcasting',
-          width: '25%',
-        },
-        {
-          url: "https://res.cloudinary.com/dhijllt3x/image/upload/v1646199901/file-upload/Untitled-1_jidhve.png",
-          title: ' SMS Gateway – Bulk SMS',
-          width: '25%',
-        },
-        {
-          url: "https://res.cloudinary.com/dhijllt3x/image/upload/v1646199901/file-upload/Untitled-1_jidhve.png",
-          title: ' Customized Web Application',
-          width: '25%',
-        },
-        {
-          url: "https://res.cloudinary.com/dhijllt3x/image/upload/v1646199901/file-upload/Untitled-1_jidhve.png",
-          title: ' Service based Mobile Apps',
-          width: '25%',
-        }
-      ];
-
+   
     return (
         <Carousel 
-        indicators={false}
+        indicators={true}
         animation="fade"
         slide={1000}>
             {
-                images.map( (item, i) => <Item key={i} item={item} /> )
+                [1,2,3].map( (item, i) => <Item key={i} item={item} /> )
             }
         </Carousel>
     )
@@ -42,8 +20,8 @@ export default function Example(props)
 function Item(props)
 {
     return (
-        <Box>
+        <Container sx={{marginTop: 2}}>
             <img alt={props.item.title} src={backgroundImage} style={{width: '100%', height: '300px'}}/>
-        </Box>
+        </Container>
     )
 }
