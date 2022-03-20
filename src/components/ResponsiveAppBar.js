@@ -9,9 +9,10 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
+import Link from "@mui/material/Link";
 
+import MenuItem from '@mui/material/MenuItem';
+import logo from '../assets/eatl_logo.png';
 const pages = ['Products', 'Pricing', 'Blog'];
 
 const ResponsiveAppBar = () => {
@@ -30,14 +31,15 @@ const ResponsiveAppBar = () => {
     <AppBar position="sticky-top" elevation={0} sx={{bgcolor: "secondary.main"}}>
       <Container>
         <Toolbar disableGutters id="back-to-top-anchor">
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
+          <Link
+            variant="p"
+            underline="none"
+            color="inherit"
+            href="/"
             sx={{ mr: '2', display: { xs: 'none', md: 'flex' } }}
           >
-            Logo Xl
-          </Typography>
+            <img src={logo} style={{ height: "50px" }} />
+          </Link>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
@@ -85,14 +87,16 @@ const ResponsiveAppBar = () => {
               ))}
             </Menu>
           </Box>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
+
+          <Link
+            variant="p"
+            underline="none"
+            color="inherit"
+            href="/"
             sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
           >
-            LOGO SM
-          </Typography>
+            <img src={logo} style={{ height: "40px" }} />
+          </Link>
           
         </Toolbar>
       </Container>
