@@ -43,7 +43,7 @@ function ScrollTop(props) {
 export default function NavBar(props) {
   return (
     <>
-      <ResponsiveAppBar/>
+      <ResponsiveAppBar position="sticky-top"/>
       <ScrollTop {...props}>
         <Fab color="secondary" size="small" aria-label="scroll back to top">
           <KeyboardArrowUpIcon />
