@@ -1,17 +1,17 @@
 import { createTheme } from '@mui/material/styles';
-import { green, grey, red, purple,blue } from '@mui/material/colors';
+import { green, grey, red, purple } from '@mui/material/colors';
 
 const rawTheme = createTheme({
   palette: {
     primary: {
-      light: purple[50],
-      main: purple[500],
-      dark: purple[700],
+      light: '#69696a',
+      main: '#28282a',
+      dark: '#1e1e1f',
     },
     secondary: {
-      light: red[50],
-      main: "#1d424f",
-      dark: red[700],
+      light: '#fff5f8',
+      main: '#ccdee6',
+      dark: '#e62958',
     },
     warning: {
       main: '#ffc071',
