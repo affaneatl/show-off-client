@@ -2,9 +2,9 @@ import React from "react";
 import Carousel from "react-material-ui-carousel";
 import { Box, Typography } from "@mui/material";
 import backgroundImage from "../assets/backgroundImage.png";
-import banner1 from "../assets/banner-1.png";
-import banner2 from "../assets/banner-2.png";
-import banner3 from "../assets/banner-3.png";
+import banner1 from "../assets/banner-1.jpg";
+import banner2 from "../assets/banner-2.jpg";
+import banner3 from "../assets/banner-3.jpg";
 export default function Header() {
   const banners = [banner1, banner2, banner3];
   return (
@@ -24,7 +24,7 @@ function Item(props) {
         src={props.item}
         style={{ width: "100%", height: "300px" }}
       />
-      <Typography color="white" sx={{position: "absolute"}} variant="h3">Hello banner</Typography>
+      <Typography color="white" sx={{position: "absolute"}} variant="h3"></Typography>
     </Box>
   );
 }

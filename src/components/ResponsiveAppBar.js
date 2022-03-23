@@ -27,7 +27,7 @@ const ResponsiveAppBar = () => {
 
   return (
     <AppBar
-      position="sticky-top"
+      position="sticky"
       color="primary"
       elevation={0}
       sx={{ bgcolor: "white" }}

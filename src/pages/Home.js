@@ -6,17 +6,16 @@ import EatlEvent from "../views/EatlEvent";
 import Products from "../views/Products";
 import News from "../views/News";
 import ProductCategories from "../views/bin/ProductCategories";
+import NewsSection from "../views/NewsSection";
+import Container from "@mui/material/Container";
+
 
 function Home() {
   return (
     <>
       <NavBar />
       <Header />
-      <EatlEvent />
-      <Products />
-      <News />
-      <ProductCategories/>
-      <AppFooter />
+      <NewsSection/>
     </>
   );
 }
