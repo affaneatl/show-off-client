@@ -3,7 +3,7 @@ import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import ButtonBase from "@mui/material/ButtonBase";
 import Container from "@mui/material/Container";
-import Typography from "../components/Typography";
+import Typography from "../../components/Typography";
 import { green, grey, red, purple } from "@mui/material/colors";
 
 const ImageBackdrop = styled("div")(({ theme }) => ({
@@ -12,7 +12,7 @@ const ImageBackdrop = styled("div")(({ theme }) => ({
   right: 0,
   top: 0,
   bottom: 0,
-  background: purple[900],
+  background: "#58201d",
   opacity: 0.8,
   transition: theme.transitions.create("opacity"),
 }));
@@ -37,7 +37,7 @@ const ImageIconButton = styled(ButtonBase)(({ theme }) => ({
     opacity: 0,
   },
   "&:hover .imageTitle": {
-    color: purple[900],
+    color: "#dc515d",
     fontWeight: 500,
   },
   "& .imageTitle": {

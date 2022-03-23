@@ -108,9 +108,9 @@ export default function AppFooter() {
           </Grid>
           <Grid item>
             <Typography variant="caption">
-              {'Icons made by '}
+              {'Website Designed by'}
               <Link href="https://www.freepik.com" rel="sponsored" title="Freepik">
-                Freepik
+                Affan
               </Link>
               {' from '}
               <Link href="https://www.flaticon.com" rel="sponsored" title="Flaticon">

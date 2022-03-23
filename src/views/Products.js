@@ -3,8 +3,16 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Typography from "../components/Typography";
 import Card from "@mui/material/Card";
+import product1 from '../assets/products/1.jpg'
+import product2 from '../assets/products/2.jpg'
+import product3 from '../assets/products/3.jpg'
+import product4 from '../assets/products/4.jpg'
+import product5 from '../assets/products/5.jpg'
+import product6 from '../assets/products/6.jpg'
+import product7 from '../assets/products/7.jpg'
+import product8 from '../assets/products/8.jpg'
 
-const products = ["EduTube", "Banbeis", "Dgme", "BMNN", "ABCD"];
+const products = [product1, product2, product3, product4, product5, product6,product7, product8];
 
 function Products() {
   return (
@@ -43,10 +51,10 @@ const ProductCard = ({ product }) => {
           alignItems: "center",
           justifyContent: "center",
           boxShadow: 4,
-          bgcolor: "secondary.main",
+          bgcolor: "white",
         }}
       >
-        <Typography variant="h6">{product}</Typography>
+        <img src={product} style={{ height: ""}}/>
       </Card>
     </Grid>
   );

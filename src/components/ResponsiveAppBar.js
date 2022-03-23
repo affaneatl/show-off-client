@@ -30,7 +30,7 @@ const ResponsiveAppBar = () => {
       position="sticky-top"
       color="primary"
       elevation={0}
-      sx={{ bgcolor: "secondary.main" }}
+      sx={{ bgcolor: "white" }}
     >
       <Container>
         <Toolbar disableGutters id="back-to-top-anchor">

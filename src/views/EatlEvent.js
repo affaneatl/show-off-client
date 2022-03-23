@@ -2,7 +2,7 @@ import { Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import ReactPlayer from "react-player";
 
-function HeroSection() {
+function EatlEvent() {
   return (
     <Container>
       <Grid
@@ -39,4 +39,4 @@ function HeroSection() {
   );
 }
 
-export default HeroSection;
+export default EatlEvent;
