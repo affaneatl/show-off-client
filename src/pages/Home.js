@@ -8,14 +8,23 @@ import News from "../views/News";
 import ProductCategories from "../views/bin/ProductCategories";
 import NewsSection from "../views/NewsSection";
 import Container from "@mui/material/Container";
-
+import Services from "../views/Services";
+import DirectorsMessage from "../views/DirectorsMessage";
+import PartnersAndClients from "../views/PartnersAndClients";
+import Carousel from '../components/Carousel'
 
 function Home() {
   return (
     <>
       <NavBar />
       <Header />
+      <Products/>
       <NewsSection/>
+      <Services/>
+      <DirectorsMessage/>
+      <PartnersAndClients/>
+      <ProductCategories/>
+      <AppFooter/>
     </>
   );
 }

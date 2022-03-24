@@ -24,7 +24,7 @@ function Products() {
         component="h2"
         sx={{ mb: 4 }}
       >
-        Products
+        Our Products
       </Typography>
       <Grid container spacing={3}>
         {products.map((product) => (

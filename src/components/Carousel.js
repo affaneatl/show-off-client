@@ -1,30 +1,129 @@
-import React from "react";
-import Carousel from "react-material-ui-carousel";
-import { Box, Typography } from "@mui/material";
-import backgroundImage from "../assets/backgroundImage.png";
-import banner1 from "../assets/banner-1.png";
-import banner2 from "../assets/banner-2.png";
-import banner3 from "../assets/banner-3.png";
-export default function Header() {
-  const banners = [banner1, banner2, banner3];
-  return (
-    <Carousel indicators={true} animation="fade" slide={1000}>
-      {banners.map((item, i) => (
-        <Item key={i} item={item} />
-      ))}
-    </Carousel>
-  );
-}
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
 
-function Item(props) {
+// import required modules
+import { Pagination } from "swiper";
+import { Container, Grid, Box, Typography, Stack } from "@mui/material";
+import AcUnitIcon from "@mui/icons-material/AcUnit";
+import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
+import AssuredWorkloadIcon from "@mui/icons-material/AssuredWorkload";
+export default function Carousel() {
   return (
-    <Box sx={{display: 'flex', alignItems: 'center',justifyContent: 'center'}}>
-      <img
-        alt={props.item.title}
-        src={props.item}
-        style={{ width: "100%", height: "300px" }}
-      />
-      <Typography color="white" sx={{position: "absolute"}} variant="h3">Hello banner</Typography>
-    </Box>
+    <>
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={10}
+        // pagination={{
+        //   clickable: true,
+        // }}
+        navigation={true} modules={[Navigation]} className="mySwiper"
+        scrollbar={{ draggable: true }}
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 20,
+          },
+        }}
+       
+      >
+        <SwiperSlide>
+          <Stack
+            sx={{ bgcolor: "primary.main", width: "100%", height: 100, color: "white" }}
+            direction="column"
+            justifyContent="center"
+            alignItems="center"
+            spacing={2}
+          >
+            <AcUnitIcon />
+            <Typography variant="h6" color="white" gutterBottom>
+              World Bank
+            </Typography>
+          </Stack>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Stack
+            sx={{ bgcolor: "primary.main", width: "100%", height: 100, color: "white" }}
+            direction="column"
+            justifyContent="center"
+            alignItems="center"
+            spacing={2}
+          >
+            <AcUnitIcon />
+            <Typography variant="h6" color="white" gutterBottom>
+              Health Ministry
+            </Typography>
+          </Stack>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Stack
+            sx={{ bgcolor: "primary.main", width: "100%", height: 100, color: "white" }}
+            direction="column"
+            justifyContent="center"
+            alignItems="center"
+            spacing={2}
+          >
+            <AcUnitIcon />
+            <Typography variant="h6" color="white" gutterBottom>
+              Invoice
+            </Typography>
+          </Stack>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Stack
+            sx={{ bgcolor: "primary.main", width: "100%", height: 100, color: "white" }}
+            direction="column"
+            justifyContent="center"
+            alignItems="center"
+            spacing={2}
+          >
+            <AcUnitIcon />
+            <Typography variant="h6" color="white" gutterBottom>
+              Invoice
+            </Typography>
+          </Stack>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Stack
+            sx={{ bgcolor: "primary.main", width: "100%", height: 100, color: "white" }}
+            direction="column"
+            justifyContent="center"
+            alignItems="center"
+            spacing={2}
+          >
+            <AcUnitIcon />
+            <Typography variant="h6" color="white" gutterBottom>
+              Invoice
+            </Typography>
+          </Stack>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Stack
+            sx={{ bgcolor: "primary.main", width: "100%", height: 100, color: "white" }}
+            direction="column"
+            justifyContent="center"
+            alignItems="center"
+            spacing={2}
+          >
+            <AcUnitIcon />
+            <Typography variant="h6" color="white" gutterBottom>
+              Invoice
+            </Typography>
+          </Stack>
+        </SwiperSlide>
+      </Swiper>
+    </>
   );
 }

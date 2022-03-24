@@ -18,13 +18,19 @@ export default function Header() {
 
 function Item(props) {
   return (
-    <Box sx={{display: 'flex', alignItems: 'center',justifyContent: 'center'}}>
+    <Box
+      sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}
+    >
       <img
         alt={props.item.title}
         src={props.item}
-        style={{ width: "100%", height: "300px" }}
+        style={{ width: "100%", height: "auto" }}
       />
-      <Typography color="white" sx={{position: "absolute"}} variant="h3"></Typography>
+      <Typography
+        color="white"
+        sx={{ position: "absolute" }}
+        variant="h3"
+      ></Typography>
     </Box>
   );
 }
