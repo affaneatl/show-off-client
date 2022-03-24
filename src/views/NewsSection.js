@@ -12,7 +12,7 @@ import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
 import AssuredWorkloadIcon from "@mui/icons-material/AssuredWorkload";
 function NewsSection() {
   return (
-    <Container sx={{ mt: 8, mb: 4 }}>
+    <Container sx={{ mt: 8, mb: 4 }} >
        <Typography
         variant="h4"
         marked="center"

@@ -48,3 +48,6 @@ body {
   height: 100%;
   object-fit: cover;
 }
+.custombg{
+  background-color: rgb(251, 244, 234);
+}

@@ -24,7 +24,7 @@ function Item(props) {
       <img
         alt={props.item.title}
         src={props.item}
-        style={{ width: "100%", height: "auto" }}
+        style={{ width: "100%", height: "400px" }}
       />
       <Typography
         color="white"
