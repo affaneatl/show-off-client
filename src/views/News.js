@@ -8,43 +8,39 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Pagination } from "swiper";
-import { Container } from "@mui/material";
+import { Container, Box } from "@mui/material";
 import Typography from "../components/Typography";
 import SlideCard from "../components/SlideCard";
-export default function App() {
+import "swiper/css/navigation";
+import { Navigation } from "swiper";
+import EatlEvent from "./EatlEvent";
+export default function News() {
   return (
     <Container>
-      <Typography
-        variant="h4"
-        marked="center"
-        align="center"
-        component="h2"
-        sx={{ mb: 4 }}
-      >
+      <Typography variant="h4" marked="center" align="center" component="h2">
         Latest News
       </Typography>
+     <EatlEvent/>
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
-        pagination={{
-          clickable: true,
-        }}
+        navigation={true}
+        modules={[Navigation]}
+        className="mySwiper"
         breakpoints={{
           640: {
             slidesPerView: 2,
             spaceBetween: 20,
           },
           768: {
-            slidesPerView: 3,
-            spaceBetween: 40,
+            slidesPerView: 2,
+            spaceBetween: 20,
           },
           1024: {
-            slidesPerView: 4,
-            spaceBetween: 50,
+            slidesPerView: 3,
+            spaceBetween: 20,
           },
         }}
-        modules={[Pagination]}
-        className="mySwiper"
       >
         <SwiperSlide>
           <SlideCard />

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
@@ -7,11 +7,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 // import required modules
-import { Pagination } from "swiper";
-import { Container, Grid, Box, Typography, Stack } from "@mui/material";
+import { Typography, Stack } from "@mui/material";
 import AcUnitIcon from "@mui/icons-material/AcUnit";
-import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
-import AssuredWorkloadIcon from "@mui/icons-material/AssuredWorkload";
 export default function Carousel() {
   return (
     <>

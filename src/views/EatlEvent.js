@@ -12,6 +12,7 @@ function EatlEvent() {
           display: "flex",
           alignItems: "center",
           marginTop: "20px",
+          marginBottom: "20px",
         }}
       >
         <Grid item xs={12} md={6}>
