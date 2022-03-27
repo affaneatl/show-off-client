@@ -108,9 +108,10 @@ const SlideCard = ({img,title, detail}) => {
         <Button
           variant="contained"
           size="small"
-          sx={{ textTransform: "capitalize", mb: 2, ml: 1 }}
+          color="secondary"
+          sx={{ textTransform: "capitalize", mb: 2, ml: 1, borderRadius: 0, boxShadow: 0 }}
         >
-          Learn More
+          See Details
         </Button>
       </CardActions>
     </Card>

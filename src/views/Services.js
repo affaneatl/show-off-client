@@ -1,6 +1,6 @@
 import { Container, Grid, Stack } from "@mui/material";
 import React from "react";
-import Typography from "@mui/material/Typography";
+import Typography from "../components/Typography";
 import DeveloperModeIcon from "@mui/icons-material/DeveloperMode";
 import { Box } from "@mui/system";
 
@@ -18,8 +18,8 @@ function Services() {
       </Typography>
       <Typography
         fontWeight="bold"
-        fontSize="25px"
-        color="secondary"
+        fontSize="20px"
+        color="primary"
         gutterBottom
         align="center"
       >
@@ -46,7 +46,7 @@ const Service = () => {
       md={3}
       xs={12}
     >
-      <Box sx={{bgcolor: 'secondary.main'  ,display: 'flex', justifyContent: 'center', alignItems: 'center' ,flexDirection: 'column',padding: 4,transition: 1,  "&:hover": {
+      <Box sx={{bgcolor: 'secondary.main' ,display: 'flex', justifyContent: 'center', alignItems: 'center' ,flexDirection: 'column',padding: 4,transition: 1,  "&:hover": {
             cursor: "pointer",
             bgcolor: "green",
             color: "secondary.main",
