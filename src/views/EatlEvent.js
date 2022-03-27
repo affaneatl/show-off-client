@@ -12,11 +12,11 @@ function EatlEvent() {
           display: "flex",
           alignItems: "center",
           marginTop: "20px",
-          marginBottom: "20px",
+          marginBottom: "40px",
         }}
       >
         <Grid item xs={12} md={6}>
-          <Typography variant="h3" gutterBottom color="secondary">
+          <Typography variant="h4" gutterBottom>
             Eatl Event Video
           </Typography>
           <Typography variant="body-1">
@@ -33,7 +33,7 @@ function EatlEvent() {
           </Typography>
         </Grid>
         <Grid item xs={12} md={6} sx={{display: 'flex', alignItems: 'center'}}>
-          <ReactPlayer width= "100%" url="https://www.youtube.com/watch?v=UVCP4bKy9Iw" />
+          <ReactPlayer width={640} height={300} url="https://www.youtube.com/watch?v=UVCP4bKy9Iw" />
         </Grid>
       </Grid>
     </Container>

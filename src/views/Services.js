@@ -1,9 +1,9 @@
-import { Container, Grid } from "@mui/material";
+import { Container, Grid, Stack } from "@mui/material";
 import React from "react";
-import Typography from "../components/Typography";
-import AcUnitIcon from "@mui/icons-material/AcUnit";
-import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
-import AssuredWorkloadIcon from "@mui/icons-material/AssuredWorkload";
+import Typography from "@mui/material/Typography";
+import DeveloperModeIcon from "@mui/icons-material/DeveloperMode";
+import { Box } from "@mui/system";
+
 function Services() {
   return (
     <Container sx={{ mt: 8, mb: 4 }}>
@@ -14,57 +14,53 @@ function Services() {
         component="h2"
         sx={{ mb: 4 }}
       >
-        Our Services
+        Services <span className="span">We Provide</span>
       </Typography>
-      <Grid container spacing={4} sx={{ marginTop: 2 }}>
-        <Grid item md={6} xs={12}>
-          <Typography fontWeight="bold" fontSize="25px" color="secondary" gutterBottom>
-            We are building software solution that solves your business
-            challenges
-          </Typography>
-        </Grid>
-        <Grid item md={6} xs={12}>
-          <Typography variant="body-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus
-            commodo suscipit tellus et pellentesque.
-          </Typography>
-        </Grid>
-      </Grid>
-      <Grid container spacing={4} sx={{ marginTop: 2 }}>
-        <Grid item md={4} xs={12}>
-          <AcUnitIcon />
-          <Typography variant="h6" gutterBottom>
-            Invoice
-          </Typography>
-          <Typography variant="body1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            sit amet eros blandit, hendrerit elit et,
-          </Typography>
-        </Grid>
-        <Grid item md={4} xs={12}>
-          <AccountBalanceIcon />
-          <Typography variant="h6" gutterBottom>
-            Invoice
-          </Typography>
-          <Typography variant="body1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            sit amet eros blandit, hendrerit elit et,
-          </Typography>
-        </Grid>
-        <Grid item md={4} xs={12}>
-          <AssuredWorkloadIcon />
-          <Typography variant="h6" gutterBottom>
-            Invoice
-          </Typography>
-          <Typography variant="body1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            sit amet eros blandit, hendrerit elit et,
-          </Typography>
-        </Grid>
+      <Typography
+        fontWeight="bold"
+        fontSize="25px"
+        color="secondary"
+        gutterBottom
+        align="center"
+      >
+        We are building software solution that solves your business challenges
+      </Typography>
+      <Grid container spacing={3} sx={{ marginTop: 2 }}>
+        <Service />
+        <Service />
+        <Service />
+        <Service />
+        <Service />
+        <Service />
+        <Service />
+        <Service />
       </Grid>
     </Container>
   );
 }
+
+const Service = () => {
+  return (
+    <Grid
+      item
+      md={3}
+      xs={12}
+    >
+      <Box sx={{bgcolor: 'secondary.main'  ,display: 'flex', justifyContent: 'center', alignItems: 'center' ,flexDirection: 'column',padding: 4,transition: 1,  "&:hover": {
+            cursor: "pointer",
+            bgcolor: "green",
+            color: "secondary.main",
+            transition: "smooth",
+            boxShadow:1,
+         opacity: 10,
+          },}}>
+        <DeveloperModeIcon sx={{color: "white"}} />
+        <Typography color="white" variant="h6" gutterBottom mt={2}>
+          Web Development
+        </Typography>
+      </Box>
+    </Grid>
+  );
+};
 
 export default Services;

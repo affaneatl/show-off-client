@@ -38,84 +38,84 @@ export default function Carousel() {
       >
         <SwiperSlide>
           <Stack
-            sx={{ bgcolor: "primary.main", width: "100%", height: 100, color: "white" }}
+            sx={{ bgcolor: "warning.light", width: "100%", height: 100, color: "white" }}
             direction="column"
             justifyContent="center"
             alignItems="center"
             spacing={2}
           >
-            <AcUnitIcon />
-            <Typography variant="h6" color="white" gutterBottom>
+            <AcUnitIcon color="primary"/>
+            <Typography variant="h6" color="primary" gutterBottom>
               World Bank
             </Typography>
           </Stack>
         </SwiperSlide>
         <SwiperSlide>
           <Stack
-            sx={{ bgcolor: "primary.main", width: "100%", height: 100, color: "white" }}
+            sx={{ bgcolor: "warning.light", width: "100%", height: 100, color: "white" }}
             direction="column"
             justifyContent="center"
             alignItems="center"
             spacing={2}
           >
-            <AcUnitIcon />
-            <Typography variant="h6" color="white" gutterBottom>
+            <AcUnitIcon color="primary"/>
+            <Typography variant="h6" color="primary" gutterBottom>
               Health Ministry
             </Typography>
           </Stack>
         </SwiperSlide>
         <SwiperSlide>
           <Stack
-            sx={{ bgcolor: "primary.main", width: "100%", height: 100, color: "white" }}
+            sx={{ bgcolor: "warning.light", width: "100%", height: 100, color: "white" }}
             direction="column"
             justifyContent="center"
             alignItems="center"
             spacing={2}
           >
-            <AcUnitIcon />
-            <Typography variant="h6" color="white" gutterBottom>
+            <AcUnitIcon color="primary"/>
+            <Typography variant="h6" color="primary" gutterBottom>
               Invoice
             </Typography>
           </Stack>
         </SwiperSlide>
         <SwiperSlide>
           <Stack
-            sx={{ bgcolor: "primary.main", width: "100%", height: 100, color: "white" }}
+            sx={{ bgcolor: "warning.light", width: "100%", height: 100, color: "white" }}
             direction="column"
             justifyContent="center"
             alignItems="center"
             spacing={2}
           >
-            <AcUnitIcon />
-            <Typography variant="h6" color="white" gutterBottom>
+            <AcUnitIcon color="primary"/>
+            <Typography variant="h6" color="primary" gutterBottom>
               Invoice
             </Typography>
           </Stack>
         </SwiperSlide>
         <SwiperSlide>
           <Stack
-            sx={{ bgcolor: "primary.main", width: "100%", height: 100, color: "white" }}
+            sx={{ bgcolor: "warning.light", width: "100%", height: 100, color: "white" }}
             direction="column"
             justifyContent="center"
             alignItems="center"
             spacing={2}
           >
-            <AcUnitIcon />
-            <Typography variant="h6" color="white" gutterBottom>
+            <AcUnitIcon color="primary"/>
+            <Typography variant="h6" color="primary" gutterBottom>
               Invoice
             </Typography>
           </Stack>
         </SwiperSlide>
         <SwiperSlide>
           <Stack
-            sx={{ bgcolor: "primary.main", width: "100%", height: 100, color: "white" }}
+            sx={{ bgcolor: "warning.light", width: "100%", height: 100, color: "white" }}
             direction="column"
             justifyContent="center"
             alignItems="center"
             spacing={2}
           >
-            <AcUnitIcon />
-            <Typography variant="h6" color="white" gutterBottom>
+            <AcUnitIcon color="primary"/>
+            <Typography variant="h6" color="primary" gutterBottom>
               Invoice
             </Typography>
           </Stack>

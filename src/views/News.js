@@ -8,19 +8,47 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Pagination } from "swiper";
-import { Container, Box } from "@mui/material";
+import {
+  Container,
+  Box,
+  Card,
+  CardMedia,
+  CardContent,
+  CardActions,
+  Button,
+} from "@mui/material";
 import Typography from "../components/Typography";
-import SlideCard from "../components/SlideCard";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
 import EatlEvent from "./EatlEvent";
+import news1 from "../assets/news/1.jpg";
+import news2 from "../assets/news/2.jpg";
+import news3 from "../assets/news/3.jpg";
+
+const news = [
+  {
+    title: "Eatl Event Title Goes here",
+    detail: "Here is the little details about the recent event from eatl.We are making things better",
+    img: { news1 },
+  },
+  {
+    title: "News title",
+    detail: "si fhuhfue feigig negiha eg iauheigu aeugh iaeg",
+    img: { news2 },
+  },
+  {
+    title: "News title",
+    detail: "si fhuhfue feigig negiha eg iauheigu aeugh iaeg",
+    img: { news3 },
+  },
+];
+
 export default function News() {
   return (
-    <Container>
-      <Typography variant="h4" marked="center" align="center" component="h2">
-        Latest News
+    <Container sx={{ mt: 10, mb: 4 }}>
+      <Typography variant="h4" marked="center" align="center" component="h2" mb={4}>
+        Latest <span className="span">News</span>
       </Typography>
-     <EatlEvent/>
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
@@ -37,17 +65,12 @@ export default function News() {
             spaceBetween: 20,
           },
           1024: {
-            slidesPerView: 3,
+            slidesPerView: 4,
             spaceBetween: 20,
           },
         }}
       >
-        <SwiperSlide>
-          <SlideCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <SlideCard />
-        </SwiperSlide>
+        
         <SwiperSlide>
           <SlideCard />
         </SwiperSlide>
@@ -67,3 +90,30 @@ export default function News() {
     </Container>
   );
 }
+
+const SlideCard = ({img,title, detail}) => {
+  return(
+    <Box boxShadow={5} mb={4} sx={{ bgcolor: "primary.light" }}>
+    <Card sx={{ boxShadow: 0 }}>
+      <CardMedia component="img" alt="green iguana" height="140" src={news3} />
+      <CardContent>
+        <Typography gutterBottom variant="h6" component="div" align="left">
+          {news[0].title}
+        </Typography>
+        <Typography variant="body2" color="text.secondary" align="left">
+        {news[0].detail}
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button
+          variant="contained"
+          size="small"
+          sx={{ textTransform: "capitalize", mb: 2, ml: 1 }}
+        >
+          Learn More
+        </Button>
+      </CardActions>
+    </Card>
+  </Box>
+  )
+};

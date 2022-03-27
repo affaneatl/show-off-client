@@ -5,24 +5,40 @@ import Box from "@mui/material/Box";
 import AcUnitIcon from "@mui/icons-material/AcUnit";
 import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
 import AssuredWorkloadIcon from "@mui/icons-material/AssuredWorkload";
+import Avatar from "@mui/material/Avatar";
+import Divider from "@mui/material/Divider";
+import md from "../assets/md.jpg";
 function Services() {
   return (
-    <Container sx={{ mt: 8, mb: 4 }}>
-      <Typography
-        variant="h4"
-        marked="center"
-        align="center"
-        component="h2"
-        sx={{ mb: 4 }}
+    <Box
+      sx={{ mt: 8, mb: 4, p: 6, }}
+      className="custombg"
+    >
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          flexDirection: "column",
+        }}
       >
-        Message from the Managing Director
-      </Typography>
-      <Box>
-        <Typography variant="subtitle1" align="center" sx={{
-            m:10,
-            mt:4,
-            color: "primary"
-        }}>
+        <Avatar alt="Remy Sharp" src={md} sx={{ width: 100, height: 100 }} />
+        <Typography color="secondary.main" mt={2} variant="h6">
+          Mubin Khan
+        </Typography>
+        <Typography color="warning.main" mb={4}>
+          Managing Director, Ethics Advance Technology Ltd
+        </Typography>
+        <Divider />
+        <Typography
+          variant="subtitle1"
+          align="center"
+          sx={{
+            color: "primary",
+            ml: 10,
+            mr: 10,
+          }}
+        >
           For any company, the drive for sustainability begins with desired
           performance and results, adhering to commitments and technological
           innovation. The last several years Ethics Advanced Technology
@@ -30,7 +46,7 @@ function Services() {
           satisfaction.
         </Typography>
       </Box>
-    </Container>
+    </Box>
   );
 }
 

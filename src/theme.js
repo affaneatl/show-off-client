@@ -1,17 +1,17 @@
 import { createTheme } from '@mui/material/styles';
-import { green, grey, red, purple } from '@mui/material/colors';
+import { green, grey, indigo, red } from '@mui/material/colors';
 
 const rawTheme = createTheme({
   palette: {
     primary: {
       light: '#69696a',
-      main: '#56211b',
+      main: '#28282a',
       dark: '#1e1e1f',
     },
     secondary: {
-      light: '#fff5f8',
-      main: '#d64a37',
-      dark: '#e62958',
+      light: indigo[50],
+      main: indigo[500],
+      dark: indigo[700],
     },
     warning: {
       main: '#ffc071',

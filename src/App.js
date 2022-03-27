@@ -5,7 +5,7 @@ import 'animate.css';
 
 function App() {
   return (
-    <div className="App custombg">
+    <div className="App custombg1">
       <Routes>
         <Route path='/' element={<Home/>}/>
       </Routes>
