@@ -47,16 +47,17 @@ const ResponsiveAppBar = (props) => {
       position="sticky"
       color="primary"
       elevation={0}
-      sx={{ bgcolor: 'secondary.main' }}
+      sx={{ bgcolor: 'indigo' }}
+      className="customAppbar"
     >
       <Container>
         <Toolbar disableGutters id="back-to-top-anchor">
           <Link
             href="/"
-            sx={{ mr: 2, flexGrow: 4, display: { xs: "none", md: "flex" } ,textDecoration: "none" }}
+            sx={{ mr: 2, flexGrow: 4, display: { xs: "none", md: "flex" } ,textDecoration: "none"}}
           >
-            <h3 style={{color: 'white'}}>EATL</h3>
-            {/* <img src={logo} style={{ height: "45px" }} /> */}
+            {/* <h3 style={{color: 'white'}}>EATL</h3> */}
+            <img src={logo} style={{ height: "45px" }} />
           </Link>
           <Box
             sx={{

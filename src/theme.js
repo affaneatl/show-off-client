@@ -1,17 +1,17 @@
 import { createTheme } from '@mui/material/styles';
-import { green, grey, indigo, red } from '@mui/material/colors';
+import { green, grey, deepOrange, red,indigo } from '@mui/material/colors';
 
 const rawTheme = createTheme({
   palette: {
     primary: {
-      light: '#69696a',
-      main: '#28282a',
-      dark: '#1e1e1f',
-    },
-    secondary: {
       light: indigo[50],
       main: indigo[500],
       dark: indigo[700],
+    },
+    secondary: {
+      light: deepOrange[50],
+      main: deepOrange[500],
+      dark: deepOrange[700],
     },
     warning: {
       main: '#ffc071',
