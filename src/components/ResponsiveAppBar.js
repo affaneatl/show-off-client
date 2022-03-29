@@ -47,8 +47,8 @@ const ResponsiveAppBar = (props) => {
       position="sticky"
       color="primary"
       elevation={0}
-      sx={{ bgcolor: 'indigo' }}
-      className="customAppbar"
+      sx={{ bgcolor: 'white' }}
+      // className="customAppbar"
     >
       <Container>
         <Toolbar disableGutters id="back-to-top-anchor">
@@ -67,19 +67,25 @@ const ResponsiveAppBar = (props) => {
             }}
           >
             {pages.map((page) => (
-              <Button
+              <Link
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{
                   my: 2,
                   display: "block",
                   fontWeight: "500",
-                  color: "white",
+                  color: "black",
                   textTransform: "capitalize",
+                  cursor: "pointer",
+                  textDecoration: "none",
+                  "&:hover": {
+                    cursor: "pointer",
+                    color: "#d81b60"
+                  },
                 }}
               >
                 {page}
-              </Button>
+              </Link>
             ))}
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>

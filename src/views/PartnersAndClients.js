@@ -12,7 +12,7 @@ function PartnersAndClients() {
         component="h2"
         sx={{ mb: 4 }}
       >
-        Partners and Clients
+        Partners <span className="span">and Clients</span>
       </Typography>
       <Carousel/>
     </Container>

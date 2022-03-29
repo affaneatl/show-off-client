@@ -4,13 +4,13 @@ import Grid from "@mui/material/Grid";
 import Typography from "../components/Typography";
 import Card from "@mui/material/Card";
 import product1 from "../assets/products/1.jpg";
-import product2 from "../assets/products/2.jpg";
-import product3 from "../assets/products/3.jpg";
-import product4 from "../assets/products/4.jpg";
-import product5 from "../assets/products/5.jpg";
-import product6 from "../assets/products/6.jpg";
+import product2 from "../assets/products/2.png";
+import product3 from "../assets/products/3.png";
+import product4 from "../assets/products/4.png";
+import product5 from "../assets/products/5.png";
+import product6 from "../assets/products/6.png";
 import product7 from "../assets/products/7.jpg";
-import product8 from "../assets/products/8.jpg";
+import product8 from "../assets/products/8.png";
 
 const products = [
   { name: "Edutube", img: product1 },
@@ -18,10 +18,7 @@ const products = [
   { name: "E-learning", img: product3 },
   { name: "HNF", img: product4 },
   { name: "Technical Edu", img: product5 },
-  { name: "Tax Bd", img: product6 },
-  { name: "National University", img: product7 },
-  { name: "SESIP", img: product8 },
-];
+  { name: "Tax Bd", img: product6 }]
 
 function Products() {
   return (
@@ -35,7 +32,7 @@ function Products() {
       >
         Our <span className="span">Products</span>
       </Typography>
-      <Grid container spacing={3}>
+      <Grid container spacing={2}>
         {products.map((product) => (
           <ProductCard product={product} />
         ))}
@@ -46,26 +43,21 @@ function Products() {
 
 const ProductCard = ({ product }) => {
   return (
-    <Grid
-      item
-      xs={6}
-      md={3}
-      sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
-    >
+    <Grid item xs={6} md={2}>
       <Card
+       variant="outlined"
         sx={{
-          boxShadow: 6,
+          borderRadius:0,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          width: "100%",
           "&:hover": {
             cursor: "pointer",
           },
         }}
       >
-        <div class="image">
-          <img class="image__img" src={product.img} alt="Bricks" />
-          <div class="image__overlay image__overlay--blur">
-            <div class="image__title">{product.name}</div>
-          </div>
-        </div>
+        <img src={product.img} style={{width: "95%"}}/>
       </Card>
     </Grid>
   );

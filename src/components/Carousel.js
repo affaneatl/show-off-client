@@ -18,6 +18,7 @@ export default function Carousel() {
         // pagination={{
         //   clickable: true,
         // }}
+        autoplay={true}
         navigation={true} modules={[Navigation]} className="mySwiper"
         scrollbar={{ draggable: true }}
         breakpoints={{

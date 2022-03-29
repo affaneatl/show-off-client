@@ -93,8 +93,8 @@ export default function News() {
 
 const SlideCard = ({img,title, detail}) => {
   return(
-    <Box boxShadow={5} mb={4} sx={{ bgcolor: "primary.light" }}>
-    <Card sx={{ boxShadow: 0 }}>
+    <Box mb={4} sx={{ bgcolor: "primary.light" }}>
+    <Card variant="outlined" sx={{ boxShadow: 0 }}>
       <CardMedia component="img" alt="green iguana" height="140" src={news3} />
       <CardContent>
         <Typography gutterBottom variant="h6" component="div" align="left">

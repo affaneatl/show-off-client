@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "react-material-ui-carousel";
-import { Box, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import backgroundImage from "../assets/backgroundImage.png";
 import banner1 from "../assets/banner-1.jpg";
 import banner2 from "../assets/banner-2.jpg";
@@ -18,19 +18,16 @@ export default function Header() {
 
 function Item(props) {
   return (
-    <Box
+    <Container>
+      <Box
       sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}
     >
       <img
         alt={props.item.title}
         src={props.item}
-        style={{ width: "100%", height: "400px" }}
+        style={{ width: "100%", height: "100%"}}
       />
-      <Typography
-        color="white"
-        sx={{ position: "absolute" }}
-        variant="h3"
-      ></Typography>
     </Box>
+    </Container>
   );
 }
