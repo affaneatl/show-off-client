@@ -1,7 +1,6 @@
 import * as React from "react";
 import AppFooter from "../views/AppFooter";
 import Header from "../views/Header";
-import NavBar from "../views/NavBar";
 import News from "../views/News";
 import Products from "../views/Products";
 import Projects from "../views/Projects";
@@ -14,9 +13,7 @@ import Contact from "../views/Contact";
 function Home() {
   return (
     <>
-      <NavBar />
       <Header />
-      <About/>
       <Products />
       <Projects />
       <Services />
@@ -24,7 +21,6 @@ function Home() {
       <News />
       <PartnersAndClients />
       <Contact />
-      <AppFooter />
     </>
   );
 }

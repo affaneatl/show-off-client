@@ -11,11 +11,11 @@ const services = [
   },
   {
     name: "Location Based Services",
-    icon: "https://cdn-icons.flaticon.com/png/128/819/premium/819814.png?token=exp=1648545503~hmac=c3060e9774122322384e15f25ca1a5e5",
+    icon: "https://cdn-icons-png.flaticon.com/128/2928/2928883.png",
   },
   {
     name: "IT consulting Services",
-    icon: "https://cdn-icons.flaticon.com/png/128/3242/premium/3242257.png?token=exp=1648545369~hmac=ae89b07195a47eb30102764be2a8d7e4",
+    icon: "https://cdn-icons-png.flaticon.com/128/6802/6802091.png",
   },
   {
     name: "Graphic Design",
@@ -27,7 +27,7 @@ const services = [
   },
   {
     name: "SMS gateway",
-    icon: "https://cdn-icons.flaticon.com/png/128/1323/premium/1323721.png?token=exp=1648546032~hmac=ab55878d6a1edd660288ce07f3aa1a29",
+    icon: "https://cdn-icons-png.flaticon.com/128/733/733533.png",
   },
   {
     name: "Call Center Setup",
@@ -35,7 +35,7 @@ const services = [
   },
   {
     name: "Dynamic Website",
-    icon: "https://cdn-icons.flaticon.com/png/128/954/premium/954574.png?token=exp=1648546166~hmac=c5a2c0c177daa6da45e4de12cc11c8b8",
+    icon: "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/2x/external-website-resume-flaticons-lineal-color-flat-icons-2.png",
   },
 ];
 function Services() {
