@@ -26,7 +26,7 @@ function Services() {
         <Typography color="secondary.main" mt={2} variant="h6">
           Mubin Khan
         </Typography>
-        <Typography color="warning.main" mb={4}>
+        <Typography color="error.main" mb={4}>
           Managing Director, Ethics Advance Technology Ltd
         </Typography>
         <Divider />

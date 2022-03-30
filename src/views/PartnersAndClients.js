@@ -11,6 +11,7 @@ function PartnersAndClients() {
         align="center"
         component="h2"
         sx={{ mb: 4 }}
+        color="secondary.main"
       >
         Partners <span className="span">and Clients</span>
       </Typography>

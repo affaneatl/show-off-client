@@ -39,84 +39,84 @@ export default function Carousel() {
       >
         <SwiperSlide>
           <Stack
-            sx={{ bgcolor: "secondary.light", width: "100%", height: 100, color: "white" }}
+            sx={{ bgcolor: "white", width: "100%", height: 100, color: "secondary.light" }}
             direction="column"
             justifyContent="center"
             alignItems="center"
             spacing={2}
           >
-            <AcUnitIcon color="secondary"/>
-            <Typography variant="h6" color="secondary" gutterBottom>
+            <AcUnitIcon color="#fba500"/>
+            <Typography variant="h6" color="#fba500" gutterBottom>
               World Bank
             </Typography>
           </Stack>
         </SwiperSlide>
         <SwiperSlide>
           <Stack
-            sx={{ bgcolor: "secondary.light", width: "100%", height: 100, color: "white" }}
+            sx={{ bgcolor: "white", width: "100%", height: 100, color: "white" }}
             direction="column"
             justifyContent="center"
             alignItems="center"
             spacing={2}
           >
-            <AcUnitIcon color="secondary"/>
-            <Typography variant="h6" color="secondary" gutterBottom>
+            <AcUnitIcon color="#fba500"/>
+            <Typography variant="h6" color="#fba500" gutterBottom>
               Health Ministry
             </Typography>
           </Stack>
         </SwiperSlide>
         <SwiperSlide>
           <Stack
-            sx={{ bgcolor: "secondary.light", width: "100%", height: 100, color: "white" }}
+            sx={{ bgcolor: "white", width: "100%", height: 100, color: "white" }}
             direction="column"
             justifyContent="center"
             alignItems="center"
             spacing={2}
           >
-            <AcUnitIcon color="secondary"/>
-            <Typography variant="h6" color="secondary" gutterBottom>
+            <AcUnitIcon color="#fba500"/>
+            <Typography variant="h6" color="#fba500" gutterBottom>
               Invoice
             </Typography>
           </Stack>
         </SwiperSlide>
         <SwiperSlide>
           <Stack
-            sx={{ bgcolor: "secondary.light", width: "100%", height: 100, color: "white" }}
+            sx={{ bgcolor: "white", width: "100%", height: 100, color: "white" }}
             direction="column"
             justifyContent="center"
             alignItems="center"
             spacing={2}
           >
-            <AcUnitIcon color="secondary"/>
-            <Typography variant="h6" color="secondary" gutterBottom>
+            <AcUnitIcon color="#fba500"/>
+            <Typography variant="h6" color="#fba500" gutterBottom>
               Invoice
             </Typography>
           </Stack>
         </SwiperSlide>
         <SwiperSlide>
           <Stack
-            sx={{ bgcolor: "secondary.light", width: "100%", height: 100, color: "white" }}
+            sx={{ bgcolor: "white", width: "100%", height: 100, color: "white" }}
             direction="column"
             justifyContent="center"
             alignItems="center"
             spacing={2}
           >
-            <AcUnitIcon color="secondary"/>
-            <Typography variant="h6" color="secondary" gutterBottom>
+            <AcUnitIcon color="#fba500"/>
+            <Typography variant="h6" color="#fba500" gutterBottom>
               Invoice
             </Typography>
           </Stack>
         </SwiperSlide>
         <SwiperSlide>
           <Stack
-            sx={{ bgcolor: "secondary.light", width: "100%", height: 100, color: "white" }}
+            sx={{ bgcolor: "white", width: "100%", height: 100, color: "white" }}
             direction="column"
             justifyContent="center"
             alignItems="center"
             spacing={2}
           >
-            <AcUnitIcon color="secondary"/>
-            <Typography variant="h6" color="secondary" gutterBottom>
+            <AcUnitIcon color="#fba500"/>
+            <Typography variant="h6" color="#fba500" gutterBottom>
               Invoice
             </Typography>
           </Stack>

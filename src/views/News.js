@@ -46,7 +46,7 @@ const news = [
 export default function News() {
   return (
     <Container sx={{ mt: 10, mb: 4 }}>
-      <Typography variant="h4" marked="center" align="center" component="h2" mb={4}>
+      <Typography variant="h4" marked="center" align="center" component="h2" mb={4} color="secondary.main">
         Latest <span className="span">News</span>
       </Typography>
       <Swiper

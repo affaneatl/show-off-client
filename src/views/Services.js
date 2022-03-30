@@ -47,13 +47,13 @@ function Services() {
         align="center"
         component="h2"
         sx={{ mb: 4 }}
+        color="secondary.main"
       >
         Services <span className="span">We Provide</span>
       </Typography>
       <Typography
-        fontWeight="bold"
-        fontSize="20px"
-        color="primary"
+        variant="subtitle1"
+        color="secondary.main"
         gutterBottom
         align="center"
       >
@@ -73,20 +73,18 @@ const ServiceCard = ({ service }) => {
     <Grid item md={3} xs={12}>
       <Box
         sx={{
-          opacity: 4,
-          bgcolor: "primary.light",
+          bgcolor: "primary.main",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
           flexDirection: "column",
           padding: 4,
           transition: 1,
-          border:1,
-          color: "secondary.light",
+          color: "secondary.dark",
           "&:hover": {
             cursor: "pointer",
-            bgcolor: "secondary.light",
-            color: "secondary.light",
+            bgcolor: "secondary.main",
+            color: "white",
             transition: "smooth",
             boxShadow: 4,
           },
@@ -94,7 +92,7 @@ const ServiceCard = ({ service }) => {
       >
         <img style={{ width: "50px", height: "auto" }} src={service.icon} />
         <Typography
-          color="primary.main"
+          color="white"
           align="center"
           variant="body-1"
           gutterBottom

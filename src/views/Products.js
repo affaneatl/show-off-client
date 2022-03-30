@@ -13,12 +13,11 @@ import product7 from "../assets/products/7.jpg";
 import product8 from "../assets/products/8.png";
 
 const products = [
-  { name: "Edutube", img: product1 },
-  { name: "DIA", img: product2 },
-  { name: "E-learning", img: product3 },
-  { name: "HNF", img: product4 },
-  { name: "Technical Edu", img: product5 },
-  { name: "Tax Bd", img: product6 }]
+  { name: "Edutube", img: product1, detail: "Teach what you love" },
+  { name: "ERP pharma", img: product2,detail: "Teach what you love" },
+  { name: "HIMS", img: product3,detail: "Teach what you love" },
+  { name: "HRMS", img: product4,detail: "Teach what you love" },
+];
 
 function Products() {
   return (
@@ -29,8 +28,9 @@ function Products() {
         align="center"
         component="h2"
         sx={{ mb: 4 }}
+        color="secondary.main"
       >
-        Our <span className="span">Products</span>
+        Featured <span className="span">Products</span>
       </Typography>
       <Grid container spacing={2}>
         {products.map((product) => (
@@ -43,12 +43,13 @@ function Products() {
 
 const ProductCard = ({ product }) => {
   return (
-    <Grid item xs={6} md={2}>
+    <Grid item xs={6} md={3}>
       <Card
-       variant="outlined"
+        variant="outlined"
         sx={{
-          borderRadius:0,
+          borderRadius: 0,
           display: "flex",
+          flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
           width: "100%",
@@ -57,7 +58,20 @@ const ProductCard = ({ product }) => {
           },
         }}
       >
-        <img src={product.img} style={{width: "95%"}}/>
+        {/* <img src={product.img} style={{ width: "95%" }} /> */}
+        <div class="container">
+          <div class="image">
+            <img src={product.img} alt="Avatar" />
+            
+          </div>
+
+          <div class="overlay">
+            <div class="text">
+              <h4 style={{fontSize: "18px", margin:"0"}}>{product.name}</h4>
+              <p style={{fontSize: "14px", margin: "5px"}}>{product.detail}</p>
+            </div>
+          </div>
+        </div>
       </Card>
     </Grid>
   );

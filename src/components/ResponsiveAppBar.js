@@ -56,8 +56,7 @@ const ResponsiveAppBar = (props) => {
             href="/"
             sx={{ mr: 2, flexGrow: 4, display: { xs: "none", md: "flex" } ,textDecoration: "none"}}
           >
-            {/* <h3 style={{color: 'white'}}>EATL</h3> */}
-            <img src={logo} style={{ height: "45px" }} />
+            <img src={logo} style={{ height: "50px" }} />
           </Link>
           <Box
             sx={{

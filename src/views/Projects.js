@@ -16,7 +16,8 @@ const products = [
   { name: "E-learning", img: product3 },
   { name: "HNF", img: product4 },
   { name: "Technical Edu", img: product5 },
-  { name: "Tax Bd", img: product6 }]
+  { name: "Tax Bd", img: product6 },
+];
 
 function Projects() {
   return (
@@ -26,9 +27,22 @@ function Projects() {
         marked="center"
         align="center"
         component="h2"
+        color="secondary.main"
         sx={{ mb: 4 }}
       >
         Latest <span className="span">Projects</span>
+      </Typography>
+      <Typography variant="subtitle1" gutterBottom align="center" mb={6}>
+        We are building software solution that solves your business
+        challenges.We are building software solution that solves your business
+        challenges.We are building software solution that solves your business
+        challenges.We are building software solution that solves your business
+        challenges.We are building software solution that solves your business
+        challenges.We are building software solution that solves your business
+        challenges.We are building software solution that solves your business
+        challenges.We are building software solution that solves your business
+        challenges.We are building software solution that solves your business
+        challenges.We are building software solution that solves your business
       </Typography>
       <Grid container spacing={2}>
         {products.map((product) => (
@@ -43,19 +57,29 @@ const ProductCard = ({ product }) => {
   return (
     <Grid item xs={6} md={3}>
       <Card
-       variant="outlined"
+        variant="outlined"
         sx={{
-          borderRadius:0,
+          borderRadius: 0,
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
           width: "100%",
+          flexDirection: "column",
           "&:hover": {
             cursor: "pointer",
           },
         }}
       >
-        <img src={product.img} style={{width: "100%"}}/>
+        <img src={product.img} style={{ width: "100%" }} />
+        <Typography
+          p={1}
+          bgcolor="secondary.main"
+          width="100%"
+          align="center"
+          color="white"
+        >
+          {product.name}
+        </Typography>
       </Card>
     </Grid>
   );

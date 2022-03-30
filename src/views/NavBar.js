@@ -4,7 +4,8 @@ import Box from "@mui/material/Box";
 import Fab from "@mui/material/Fab";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import Zoom from "@mui/material/Zoom";
-import ResponsiveAppBar from '../components/ResponsiveAppBar'
+import ResponsiveAppBar from "../components/ResponsiveAppBar";
+import { Container, Stack } from "@mui/material";
 
 function ScrollTop(props) {
   const { children, window } = props;
@@ -43,7 +44,24 @@ function ScrollTop(props) {
 export default function NavBar(props) {
   return (
     <>
-      <ResponsiveAppBar/>
+      <Stack
+        direction="row"
+        spacing={6}
+        justifyContent="center"
+        alignItems="center"
+        sx={{ height: 35, bgcolor: "secondary.main" }}
+      >
+        <a className="topnavlink" href="https://www.edutubebd.com/" target="_blank">
+          Edutube
+        </a>
+        <a className="topnavlink" href="#" target="_blank">
+          Innovation Hub
+        </a>
+        <a className="topnavlink" href="#" target="_blank">
+          Webmail
+        </a>
+      </Stack>
+      <ResponsiveAppBar />
       <ScrollTop {...props}>
         <Fab color="secondary" size="small" aria-label="scroll back to top">
           <KeyboardArrowUpIcon />
