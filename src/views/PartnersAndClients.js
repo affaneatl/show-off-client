@@ -3,7 +3,7 @@ import React from "react";
 import Typography from "../components/Typography";
 function PartnersAndClients() {
   return (
-    <Container sx={{ mt: 8, mb: 4 }} data-aos="flip-left" data-aos-delay="500">
+    <Container sx={{ mt: 8, mb: 4 }} data-aos="flip-left" data-aos-duration="1500">
       <Typography
         variant="h4"
         marked="center"

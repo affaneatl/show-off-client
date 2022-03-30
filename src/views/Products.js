@@ -43,7 +43,7 @@ function Products() {
 
 const ProductCard = ({ product }) => {
   return (
-    <Grid item xs={6} md={3} data-aos="flip-left">
+    <Grid item xs={6} md={3} data-aos="flip-left" data-aos-duration="1500">
       <Card
         variant="outlined"
         sx={{

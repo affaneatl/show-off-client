@@ -7,7 +7,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 export default function AppFooter() {
   return (
-    <Box className="custombg2">
+    <Box className="custombg2"  data-aos="flip-left" data-aos-duration="1500">
       <Container sx={{ paddingBottom: 4 }}>
         <Grid container spacing={4}>
           <Grid item md={4} sm={6}>

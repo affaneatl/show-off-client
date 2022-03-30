@@ -14,6 +14,7 @@ function Services() {
       sx={{ mt: 8, mb: 4, p: 6, }}
       className="custombg"
       data-aos="zoom-in"
+      data-aos-duration="1500"
     >
       <Box
         sx={{
