@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
+import Button from "@mui/material/Button";
 import Typography from "../components/Typography";
 import Card from "@mui/material/Card";
 import product1 from "../assets/projects/1.jpg";
@@ -70,16 +71,27 @@ const ProductCard = ({ product }) => {
           },
         }}
       >
-        <img src={product.img} style={{ width: "100%" }} />
-        <Typography
-          p={1}
-          bgcolor="secondary.main"
-          width="100%"
-          align="center"
-          color="white"
-        >
-          {product.name}
-        </Typography>
+        <div class="containerr">
+          <img src={product.img} alt="Avatar" class="imagee" />
+          <div class="overlayy">
+            <div class="textt">
+              <Button
+                variant="contained"
+                color="secondary"
+                size="small"
+                sx={{
+                  textTransform: "capitalize",
+                  mb: 2,
+                  ml: 1,
+                  borderRadius: 0,
+                  boxShadow: 0,
+                }}
+              >
+                Learn More
+              </Button>
+            </div>
+          </div>
+        </div>
       </Card>
     </Grid>
   );

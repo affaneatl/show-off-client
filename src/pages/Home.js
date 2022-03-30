@@ -20,7 +20,6 @@ function Home() {
       <DirectorsMessage />
       <News />
       <PartnersAndClients />
-      <Contact />
     </>
   );
 }

@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { Pagination } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 import {
   Container,
   Box,
@@ -19,7 +19,6 @@ import {
 } from "@mui/material";
 import Typography from "../components/Typography";
 import "swiper/css/navigation";
-import { Navigation } from "swiper";
 import EatlEvent from "./EatlEvent";
 import news1 from "../assets/news/1.jpg";
 import news2 from "../assets/news/2.jpg";
@@ -46,14 +45,20 @@ const news = [
 export default function News() {
   return (
     <Container sx={{ mt: 10, mb: 4 }}>
-      <Typography variant="h4" marked="center" align="center" component="h2" mb={4} color="secondary.main">
+      <Typography variant="h4" marked="center" align="center" component="h2" mb={4}>
         Latest <span className="span">News</span>
       </Typography>
       <Swiper
+      pagination={{
+        dynamicBullets: true,
+      }}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
+      modules={[Pagination,Autoplay]}
         slidesPerView={1}
         spaceBetween={10}
-        navigation={true}
-        modules={[Navigation]}
         className="mySwiper"
         breakpoints={{
           640: {
