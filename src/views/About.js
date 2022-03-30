@@ -19,17 +19,17 @@ function About() {
         <Typography variant="h4" marked="center" align="center" component="h2" mb={4}>
         About <span className="span">Us</span>
       </Typography>
-          <Typography variant="body-1" gutterBottom display="block">
+          <Typography variant="body1" gutterBottom display="block">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             varius enim in.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             varius enim in.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             varius enim in. 
           </Typography>
-          <Typography variant="body-1" gutterBottom display="block">
+          <Typography variant="body1" gutterBottom display="block">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             varius enim in eros elementum tristique
           </Typography>
-          <Typography variant="body-1" gutterBottom display="block">
+          <Typography variant="body1" gutterBottom display="block">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             varius enim in eros elementum tristique
           </Typography>

@@ -45,8 +45,8 @@ function Projects() {
         challenges.We are building software solution that solves your business
       </Typography>
       <Grid container spacing={2}>
-        {products.map((product) => (
-          <ProductCard product={product} />
+        {products.map((product, index) => (
+          <ProductCard product={product} key={index} />
         ))}
       </Grid>
     </Container>

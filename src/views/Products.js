@@ -33,8 +33,8 @@ function Products() {
         Featured <span className="span">Products</span>
       </Typography>
       <Grid container spacing={2}>
-        {products.map((product) => (
-          <ProductCard product={product} />
+        {products.map((product, index) => (
+          <ProductCard key={index} product={product} />
         ))}
       </Grid>
     </Container>
@@ -59,14 +59,14 @@ const ProductCard = ({ product }) => {
         }}
       >
         {/* <img src={product.img} style={{ width: "95%" }} /> */}
-        <div class="container">
-          <div class="image">
+        <div className="container">
+          <div className="image">
             <img src={product.img} alt="Avatar" />
             
           </div>
 
-          <div class="overlay">
-            <div class="text">
+          <div className="overlay">
+            <div className="text">
               <h4 style={{fontSize: "18px", margin:"0"}}>{product.name}</h4>
               <p style={{fontSize: "14px", margin: "5px"}}>{product.detail}</p>
             </div>

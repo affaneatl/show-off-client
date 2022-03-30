@@ -19,15 +19,15 @@ function EatlEvent() {
           <Typography variant="h4" gutterBottom>
             Eatl Event Video
           </Typography>
-          <Typography variant="body-1">
+          <Typography variant="body1">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             varius enim in eros elementum tristique
           </Typography>
-          <Typography variant="body-1">
+          <Typography variant="body1">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             varius enim in eros elementum tristique
           </Typography>
-          <Typography variant="body-1">
+          <Typography variant="body1">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             varius enim in eros elementum tristique
           </Typography>

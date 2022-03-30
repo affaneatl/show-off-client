@@ -64,7 +64,7 @@ function NewsSection() {
               <Typography variant="h6" sx={{ marginBottom: 1, marginTop: 1 }}>
                 Business strategy
               </Typography>
-              <Typography variant="body-1" display="block" gutterBottom>
+              <Typography variant="body1" display="block" gutterBottom>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Curabitur sit amet eros blandit, hendrerit elit et,{" "}
               </Typography>

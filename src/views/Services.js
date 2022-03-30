@@ -94,7 +94,7 @@ const ServiceCard = ({ service }) => {
         <Typography
           color="white"
           align="center"
-          variant="body-1"
+          variant="body1"
           gutterBottom
           mt={2}
         >
