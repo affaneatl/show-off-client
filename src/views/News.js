@@ -44,7 +44,7 @@ const news = [
 
 export default function News() {
   return (
-    <Container sx={{ mt: 10, mb: 4 }}>
+    <Container sx={{ mt: 10, mb: 4 }} data-aos="fade-right">
       <Typography variant="h4" marked="center" align="center" component="h2" mb={4}>
         Latest <span className="span">News</span>
       </Typography>

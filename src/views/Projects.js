@@ -22,7 +22,7 @@ const products = [
 
 function Projects() {
   return (
-    <Container sx={{ mt: 8, mb: 4 }}>
+    <Container sx={{ mt: 8, mb: 4 }} data-aos="fade-left">
       <Typography
         variant="h4"
         marked="center"

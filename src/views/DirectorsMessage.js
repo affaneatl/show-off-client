@@ -13,6 +13,7 @@ function Services() {
     <Box
       sx={{ mt: 8, mb: 4, p: 6, }}
       className="custombg"
+      data-aos="zoom-in"
     >
       <Box
         sx={{

@@ -4,7 +4,7 @@ import Typography from "../components/Typography";
 
 function About() {
   return (
-    <Container>
+    <Container data-aos="fade-right">
       <Grid
         container
         spacing={2}

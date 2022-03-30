@@ -21,7 +21,7 @@ const products = [
 
 function Products() {
   return (
-    <Container sx={{ mt: 8, mb: 4 }}>
+    <Container sx={{ mt: 8, mb: 4 }} data-aos="fade-down" data-aos-delay="5000">
       <Typography
         variant="h4"
         marked="center"
@@ -43,7 +43,7 @@ function Products() {
 
 const ProductCard = ({ product }) => {
   return (
-    <Grid item xs={6} md={3}>
+    <Grid item xs={6} md={3} data-aos="flip-left">
       <Card
         variant="outlined"
         sx={{
@@ -61,7 +61,7 @@ const ProductCard = ({ product }) => {
         {/* <img src={product.img} style={{ width: "95%" }} /> */}
         <div className="container">
           <div className="image">
-            <img src={product.img} alt="Avatar" />
+            <img style={{width: "100%", height: "auto"}} src={product.img} alt="Avatar" />
             
           </div>
 

@@ -40,7 +40,7 @@ const services = [
 ];
 function Services() {
   return (
-    <Container sx={{ mt: 8, mb: 4 }}>
+    <Container sx={{ mt: 8, mb: 4 }} data-aos="fade-right">
       <Typography
         variant="h4"
         marked="center"

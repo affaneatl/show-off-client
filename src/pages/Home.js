@@ -8,7 +8,7 @@ import Services from "../views/Services";
 import DirectorsMessage from "../views/DirectorsMessage";
 import PartnersAndClients from "../views/PartnersAndClients";
 import SlideCard from "../components/SlideCard";
-import About from "../views/About";
+import About from "./About";
 import Contact from "../views/Contact";
 function Home() {
   return (
