@@ -5,7 +5,7 @@ import TextField from "../components/TextField";
 
 function Contact() {
   return (
-    <Container>
+    <Container sx={{ mb: 8 }}>
         <Typography
             variant="h4"
             marked="center"

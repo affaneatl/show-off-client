@@ -6,6 +6,9 @@ import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import Zoom from "@mui/material/Zoom";
 import ResponsiveAppBar from "../components/ResponsiveAppBar";
 import { Container, Stack } from "@mui/material";
+import CallIcon from "@mui/icons-material/Call";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import EmailIcon from "@mui/icons-material/Email";
 
 function ScrollTop(props) {
   const { children, window } = props;
@@ -44,23 +47,68 @@ function ScrollTop(props) {
 export default function NavBar(props) {
   return (
     <>
-      <Stack
-        direction="row"
-        spacing={6}
-        justifyContent="center"
-        alignItems="center"
-        sx={{ height: 35, bgcolor: "secondary.main" }}
-      >
-        <a className="topnavlink" href="https://www.edutubebd.com/" target="_blank">
-          Edutube
-        </a>
-        <a className="topnavlink" href="#" target="_blank">
-          Innovation Hub
-        </a>
-        <a className="topnavlink" href="#" target="_blank">
-          Webmail
-        </a>
-      </Stack>
+      <Box sx={{ bgcolor: "secondary.main" }}>
+        <Container sx={{ display: "flex", justifyContent: "space-between" }}>
+          <Stack
+            direction="row"
+            spacing={2}
+            justifyContent="center"
+            alignItems="center"
+          >
+            <CallIcon
+              fontSize="small"
+              sx={{
+                color: "white",
+                "&:hover": {
+                  cursor: "pointer",
+                  color: "rgb(189, 243, 158)",
+                },
+              }}
+            />
+            <FacebookIcon
+              fontSize="small"
+              sx={{
+                color: "white",
+                "&:hover": {
+                  cursor: "pointer",
+                  color: "rgb(189, 243, 158)",
+                },
+              }}
+            />
+            <EmailIcon
+              fontSize="small"
+              sx={{
+                color: "white",
+                "&:hover": {
+                  cursor: "pointer",
+                  color: "rgb(189, 243, 158)",
+                },
+              }}
+            />
+          </Stack>
+          <Stack
+            direction="row"
+            spacing={6}
+            justifyContent="center"
+            alignItems="center"
+            sx={{ height: 35 }}
+          >
+            <a
+              className="topnavlink"
+              href="https://www.edutubebd.com/"
+              target="_blank"
+            >
+              Edutube
+            </a>
+            <a className="topnavlink" href="#" target="_blank">
+              Innovation Hub
+            </a>
+            <a className="topnavlink" href="#" target="_blank">
+              Webmail
+            </a>
+          </Stack>
+        </Container>
+      </Box>
       <ResponsiveAppBar />
       <ScrollTop {...props}>
         <Fab color="secondary" size="small" aria-label="scroll back to top">

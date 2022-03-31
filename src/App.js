@@ -7,6 +7,8 @@ import AppFooter from './views/AppFooter';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import About from './pages/About';
+import Contact from './pages/Contact';
+
 AOS.init()
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
+        <Route path='/contact' element={<Contact/>}/>
       </Routes>
       <AppFooter />
     </div>
