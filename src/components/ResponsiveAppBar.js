@@ -13,7 +13,27 @@ import logo from "../assets/eatl_logo.png";
 import Slide from '@mui/material/Slide';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 
-const pages = ["About", "Products", "Projects", "Latest Update", "Contact"];
+const pages = [
+  {
+    name:"About",
+    route:"/about"
+  },
+  {
+    name:"Prducts",
+    route:"/1"
+  },
+  {
+    name:"Projects",
+    route:"/projects"
+  },
+  {
+    name:"Latest Update",
+    route:"/news"
+  },
+  {
+    name:"Contact",
+    route:"/contact"
+  }];
 function HideOnScroll(props) {
   const { children, window } = props;
   // Note that you normally won't need to set the window ref as useScrollTrigger
@@ -64,9 +84,10 @@ const ResponsiveAppBar = (props) => {
               display: { xs: "none", md: "flex" },
             }}
           >
-            {pages.map((page) => (
+            {pages.map((page,index) => (
               <Link
-                key={page}
+                key={index}
+                href={page.route}
                 onClick={handleCloseNavMenu}
                 sx={{
                   my: 2,
@@ -82,7 +103,7 @@ const ResponsiveAppBar = (props) => {
                   },
                 }}
               >
-                {page}
+                {page.name}
               </Link>
             ))}
           </Box>
@@ -115,14 +136,13 @@ const ResponsiveAppBar = (props) => {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
+              {pages.map((page,index) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography textAlign="center">{page.name}</Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
-
           <Link
             href="/"
             sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
