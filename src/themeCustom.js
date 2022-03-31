@@ -1,5 +1,5 @@
 import { createTheme } from '@mui/material/styles';
-import { brown, green, blueGrey, red,deepOrange } from '@mui/material/colors';
+import { brown, green, blueGrey, red,teal } from '@mui/material/colors';
 
 const rawTheme = createTheme({
   palette: {
@@ -9,9 +9,9 @@ const rawTheme = createTheme({
         dark: blueGrey[700],
     },
     secondary: {
-        light: deepOrange[50],
-        main: deepOrange[500],
-        dark: deepOrange[700],
+        light: teal[50],
+        main: teal[500],
+        dark: teal[700],
     },
     warning: {
       main: '#ffc071',

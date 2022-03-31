@@ -47,7 +47,7 @@ function ScrollTop(props) {
 export default function NavBar(props) {
   return (
     <>
-      <Box sx={{ bgcolor: "secondary.main" }}>
+      <Box sx={{ bgcolor: "primary.main" }}>
         <Container sx={{ display: "flex", justifyContent: "space-between" }}>
           <Stack
             direction="row"
