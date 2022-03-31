@@ -36,7 +36,7 @@ function PartnersAndClients() {
       >
         Partners <span className="span">and Clients</span>
       </Typography>
-      <Typography variant="body1">
+      <Typography variant="body1" align="center">
         when an unknown printer took a galley of type and scrambled it to make a
         type specimen book. It has survived not only five centuries, but also
         the leap into electronic typesetting, remaining essentially unchanged.
@@ -87,18 +87,20 @@ function PartnersAndClients() {
                 alignItems: "center",
                 justifyContent: "center",
                 color: "white",
-                bgcolor: "primary.main",
+                bgcolor: "secondary.main",
                 padding: "10px",
                 borderRadius: "0",
                 "&:hover": {
                   cursor: "pointer",
-                  bgcolor: "secondary.main",
+                  bgcolor: "primary.main",
+                  boxShadow: 3,
                 },
               }}
             >
               <Typography
-                p={1}
+                p={2}
                 sx={{
+                  fontweight:"regular",
                   "&:hover": {
                     border: "2px solid white",
                   },

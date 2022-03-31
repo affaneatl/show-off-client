@@ -60,7 +60,7 @@ export default function AppFooter() {
         </Grid>
       </Container>
       <Box>
-      <Typography p={1} bgcolor="white" variant="body1" color="secondary.main" display="block" align="center" gutterBottom> &copy; 2022, Ethics Advance Technology ltd | All rights reserved</Typography>
+      <Typography p={1} bgcolor="white" variant="body1" color="secondary.main" display="block" align="center" gutterBottom> &copy; {new Date().getFullYear()}, Ethics Advance Technology ltd | All rights reserved</Typography>
       </Box>
     </Box>
   );

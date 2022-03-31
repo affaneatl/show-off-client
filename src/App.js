@@ -8,6 +8,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import HomeOne from './pages/HomeOne';
 
 AOS.init()
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <NavBar/>
       <Routes>
         <Route path='/' element={<Home/>}/>
+        <Route path='/1' element={<HomeOne/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/contact' element={<Contact/>}/>
       </Routes>
