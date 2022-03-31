@@ -4,20 +4,20 @@ import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
 import Typography from "../components/Typography";
 import Card from "@mui/material/Card";
-import product1 from "../assets/projects/1.jpg";
-import product2 from "../assets/projects/2.jpg";
-import product3 from "../assets/projects/3.jpg";
-import product4 from "../assets/projects/4.jpg";
-import product5 from "../assets/projects/5.jpg";
-import product6 from "../assets/projects/6.jpg";
-import product7 from "../assets/projects/7.jpg";
-import product8 from "../assets/projects/8.jpg";
+import project1 from "../assets/projects/1.jpg";
+import project2 from "../assets/projects/2.jpg";
+import project3 from "../assets/projects/3.jpg";
+import project4 from "../assets/projects/4.jpg";
+import project5 from "../assets/projects/5.jpg";
+import project6 from "../assets/projects/6.jpg";
+import project7 from "../assets/projects/7.jpg";
+import project8 from "../assets/projects/8.jpg";
 
-const products = [
-  { name: "E-learning", img: product3 },
-  { name: "HNF", img: product4 },
-  { name: "Technical Edu", img: product5 },
-  { name: "Tax Bd", img: product6 },
+const projects = [
+  { name: "E-learning", img: project3 },
+  { name: "HNF", img: project4 },
+  { name: "Technical Edu", img: project5 },
+  { name: "Tax Bd", img: project6 },
 ];
 
 function Projects() {
@@ -48,15 +48,15 @@ function Projects() {
         and also some of the world's renowned IT expertise organization.
       </Typography>
       <Grid container spacing={2}>
-        {products.map((product, index) => (
-          <ProductCard product={product} key={index} />
+        {projects.map((project, index) => (
+          <ProjectCard project={project} key={index} />
         ))}
       </Grid>
     </Container>
   );
 }
 
-const ProductCard = ({ product }) => {
+const ProjectCard = ({ project }) => {
   return (
     <Grid item xs={6} md={3}>
       <Card
@@ -74,7 +74,8 @@ const ProductCard = ({ product }) => {
         }}
       >
         <div className="containerr">
-          <img src={product.img} alt="Avatar" className="imagee" />
+          <img src={project.img} alt="Avatar" className="imagee" />
+          <Typography p={1} align="center" bgcolor="primary.main" color="white">{project.name}</Typography>
           <div className="overlayy">
             <div className="textt">
               <Button
