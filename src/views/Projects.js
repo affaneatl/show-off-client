@@ -14,10 +14,10 @@ import project7 from "../assets/projects/7.jpg";
 import project8 from "../assets/projects/8.jpg";
 
 const projects = [
-  { name: "E-learning", img: project3 },
-  { name: "HNF", img: project4 },
-  { name: "Technical Edu", img: project5 },
-  { name: "Tax Bd", img: project6 },
+  { name: "Establish e-Library Management and Set up web based Medical Student Facilities Management", img: project3 },
+  { name: "Establish e-Library Management and Set up web based Medical Student Facilities Management", img: project4 },
+  { name: "Establish e-Library Management and Set up web based Medical Student Facilities Management", img: project5 },
+  { name: "Establish e-Library Management and Set up web based Medical Student Facilities Management", img: project6 },
 ];
 
 function Projects() {
@@ -35,7 +35,7 @@ function Projects() {
         color="secondary.main"
         sx={{ mb: 4 }}
       >
-        Latest <span className="span">Projects</span>
+        Latest Projects
       </Typography>
       <Typography variant="subtitle1" gutterBottom align="center" mb={6}>
         <span style={{ fontWeight: "500" }}>
@@ -75,7 +75,7 @@ const ProjectCard = ({ project }) => {
       >
         <div className="containerr">
           <img src={project.img} alt="Avatar" className="imagee" />
-          <Typography p={1} align="center" bgcolor="primary.main" color="white">{project.name}</Typography>
+          <Typography p={2} fontWeight="bold">{project.name}</Typography>
           <div className="overlayy">
             <div className="textt">
               <Button

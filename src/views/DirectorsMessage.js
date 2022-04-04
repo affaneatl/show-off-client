@@ -11,7 +11,7 @@ import md from "../assets/md.jpg";
 function Services() {
   return (
     <Box
-      sx={{ mt: 8, mb: 4, p: 6, }}
+      sx={{ mt: 8, mb: 4, p: 6 }}
       className="custombg"
       data-aos="zoom-in"
       data-aos-duration="1500"
@@ -45,7 +45,19 @@ function Services() {
           performance and results, adhering to commitments and technological
           innovation. The last several years Ethics Advanced Technology
           Ltd.(EATL) has been working on these aspects and focusing on customer
-          satisfaction.
+          satisfaction. I believe in the technically qualified resources that we
+          manage. I believe in the products and software services which we offer
+          to meet our client needs. I believe in our employees, whose energy and
+          ingenuity continue to drive our company forward. I believe in quality
+          as well as approach for continous improvement. I honour the
+          commitments with our partners and community. But belief is not enough
+          to realize a vision. We must be willing and able to turn words into
+          action and achieve results. Each of our divisions/Practices/teams are
+          working on executing the tasks not only to complete it but also to
+          substantially improve the process with more benefits to end customer
+          We understand that long-term success depends on our ability to
+          generate superior returns to our customers and driving thru
+          innovations for sustained growth.
         </Typography>
       </Box>
     </Box>

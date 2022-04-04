@@ -30,7 +30,7 @@ function Products() {
         sx={{ mb: 4 }}
         color="secondary.main"
       >
-        Featured <span className="span">Products</span>
+        Featured Products
       </Typography>
       <Grid container spacing={2}>
         {products.map((product, index) => (

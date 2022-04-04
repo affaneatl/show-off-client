@@ -49,7 +49,7 @@ function Services() {
         sx={{ mb: 4 }}
         color="secondary.main"
       >
-        Services <span className="span">We Provide</span>
+        Services We Provide
       </Typography>
       <Typography
         variant="subtitle1"

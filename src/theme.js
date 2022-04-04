@@ -29,7 +29,7 @@ const rawTheme = createTheme({
     },
   },
   typography: {
-    fontFamily: "'poppins', sans-serif",
+    fontFamily: "'open sans', sans-serif",
     fontSize: 14,
     fontWeightLight: 300, // Work Sans
     fontWeightRegular: 400, // Work Sans
@@ -41,7 +41,7 @@ const rawTheme = createTheme({
 const fontHeader = {
   color: rawTheme.palette.text.primary,
   fontWeight: rawTheme.typography.fontWeightMedium,
-  fontFamily: "'poppins', sans-serif",
+  fontFamily: "'Bebas Neue', sans-serif",
 };
 
 const theme = {
@@ -76,7 +76,7 @@ const theme = {
     h4: {
       ...rawTheme.typography.h4,
       ...fontHeader,
-      fontSize: 36,
+      fontSize: 48,
     },
     h5: {
       ...rawTheme.typography.h5,

@@ -2,9 +2,9 @@ import React from "react";
 import Carousel from "react-material-ui-carousel";
 import { Box, Container, Typography } from "@mui/material";
 import backgroundImage from "../assets/backgroundImage.png";
-import banner1 from "../assets/banner-1.jpg";
-import banner2 from "../assets/banner-2.jpg";
-import banner3 from "../assets/banner-3.jpg";
+import banner1 from "../assets/banner1.jpg";
+import banner2 from "../assets/banner2.jpg";
+import banner3 from "../assets/banner3.jpg";
 export default function Header() {
   const banners = [banner1, banner2, banner3];
   return (
@@ -18,16 +18,22 @@ export default function Header() {
 
 function Item(props) {
   return (
-    <Container>
-      <Box
-      sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}
+    <Box
+      sx={{
+        position: "relative",
+        bgcolor: "grey"
+      }}
     >
       <img
         alt={props.item.title}
         src={props.item}
-        style={{ width: "100%", height: "300px"}}
+        style={{ width: "100%", height: "450px", opacity: 0.9 }}
       />
+      <Typography align="right"  variant="h2" color="warning.main" sx={{ position: "absolute", bottom:40, right: 70 }}>
+        Business Heading appear with
+        <span style={{display: "block", align: "right"}}>a subheading</span>
+        <span style={{display: "block",fontSize: "16px", textTransform: "capitalize"}}>sfej join bangladesh arymy anotehr day to high provfile section will be goto ubheading</span>
+      </Typography>
     </Box>
-    </Container>
   );
 }

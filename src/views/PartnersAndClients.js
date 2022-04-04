@@ -34,7 +34,7 @@ function PartnersAndClients() {
         sx={{ mb: 4 }}
         color="secondary.main"
       >
-        Partners <span className="span">and Clients</span>
+        Partners and Clients
       </Typography>
       <Typography variant="body1" align="center">
         when an unknown printer took a galley of type and scrambled it to make a

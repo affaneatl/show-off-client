@@ -13,7 +13,7 @@ function Contact() {
             component="h2"
             mb={4}
           >
-            Contact <span className="span">Us</span>
+            Contact Us
           </Typography>
       <Grid
         container

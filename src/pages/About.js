@@ -1,45 +1,104 @@
 import React from "react";
-import { Container, Grid, } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 import Typography from "../components/Typography";
 import DirectorsMessage from "../views/DirectorsMessage";
-
+import MissionAndVision from "../views/MissionAndVision";
+import img1 from "../assets/Screenshot_2.png";
+import img2 from "../assets/Screenshot_3.png";
+import img3 from "../assets/Screenshot_4.png";
+import img4 from "../assets/office.JPG";
+import Expertise from "../views/Expertise";
+import Strategies from "../views/Strategies";
+import Growth from "../views/Growth";
 function About() {
   return (
-    <Container sx={{ mb: 8 }}data-aos="fade-right">
+    <Container sx={{ mb: 8 }} data-aos="fade-right">
+      <Typography
+        variant="h4"
+        marked="center"
+        align="center"
+        component="h2"
+        mb={4}
+      >
+        About Us
+      </Typography>
       <Grid
         container
         spacing={2}
         sx={{
-          display: "flex",
-          alignItems: "center",
           marginTop: "20px",
-          marginBottom: "40px",
+          marginBottom: 2,
         }}
       >
         <Grid item xs={12} md={6}>
-        <Typography variant="h4" marked="center" align="center" component="h2" mb={4}>
-        About <span className="span">Us</span>
-      </Typography>
           <Typography variant="body1" gutterBottom display="block">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in. 
-          </Typography>
-          <Typography variant="body1" gutterBottom display="block">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros elementum tristique
-          </Typography>
-          <Typography variant="body1" gutterBottom display="block">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros elementum tristique
+            Ethics Advance Technology Limited Background Ethics Advance
+            Technology Limited (EATL) is a leading private company with
+            innovative ICT services and solutions provider in Bangladesh,
+            established in 2000. EATL has developed partnership and
+            collaborations with Bangladesh based IT companies, private sector
+            organizations, NGOs, donors, Government, Universities and also some
+            of the world most renowned IT expertise organization such as IBM,
+            Sun Oracle (infrastructural partner), Prognoz, Six Dee Telecom
+            Solutions, (business partner), Oracle (Gold Partner) and many others
+            for developing technology and efficient solutions. EATL is a private
+            enterprise and Social Change maker organization focused in ICT
+            innovations for development and business sector. We are providing
+            strategic information, technology solutions, knowledge management,
+            web-based MIS & data management solution and mobile applications
+            EATL has high quality professional team and partners both local &
+            global.
           </Typography>
         </Grid>
-        <Grid item xs={12} md={6} sx={{display: 'flex', alignItems: 'center'}}>
-          <img style={{width: '100%', height: '300px'}} src="data:image/jpeg;base64,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"/>
+        <Grid item xs={12} md={6}>
+          <img style={{ width: "100%", height: "300px" }} src={img4} />
         </Grid>
       </Grid>
-      <DirectorsMessage/>
+      <Grid container spacing={2} sx={{ marginTop: 2 }}>
+        <Grid item md={4} sm={12}>
+          <img className="imgStyle" src={img1} />
+        </Grid>
+        <Grid item md={4} sm={12}>
+          <img className="imgStyle" src={img2} />
+        </Grid>
+        <Grid item md={4} sm={12}>
+          <img className="imgStyle" src={img3} />
+        </Grid>
+      </Grid>
+      <Typography mt={2} gutterBottom>
+        Our strong collaboration, strategic relationship, innovation, networking
+        with higher government authorities, regulatory bodies and legislators
+        differentiate us from other concerned companies operating in this
+        industry of Bangladesh. Since inception, our dedication and diligence in
+        remaining technically astute have been the key ingredients of EATL's
+        success in several clients' engagements. We have thus been able to
+        maintain long-term relationship with distinctions and pride. On the pave
+        of emerging diversification of information technology, EATL's business
+        strategy combines application support, system design, database
+        administration, feasibility study, software development, hardware
+        solution, training. Social media consultancy, mobile application
+        development, Research & Development etc. EATL launched country's first
+        ever mobile app store in October, 2012 branded as 'EATLApps', and most
+        of the apps are in Bangla and local context based. We have payment
+        integration with the three largest telecom operators (MNO) in Bangladesh
+        for app purchase from mobile balance. The EATLApps store is also
+        integrated with DBBL and bkash for payment processing.
+      </Typography>
+      <Grid
+        container
+        spacing={2}
+        sx={{ p: 2, border: 1, mt: 3, borderColor: "primary.main" }}
+      >
+        <Grid item md={6}>
+          <Expertise />
+        </Grid>
+        <Grid item md={6}>
+          <Strategies />
+        </Grid>
+      </Grid>
+      <MissionAndVision />
+      <Growth />
+      <DirectorsMessage />
     </Container>
   );
 }
