@@ -98,7 +98,6 @@ function About() {
       </Grid>
       <MissionAndVision />
       <Growth />
-      <DirectorsMessage />
     </Container>
   );
 }

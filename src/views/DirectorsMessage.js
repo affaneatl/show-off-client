@@ -11,7 +11,7 @@ import md from "../assets/md.jpg";
 function Services() {
   return (
     <Box
-      sx={{ mt: 8, mb: 4, p: 6 }}
+      sx={{ mt: 2, mb: 4, p: 6 }}
       className="custombg"
       data-aos="zoom-in"
       data-aos-duration="1500"
@@ -25,10 +25,10 @@ function Services() {
         }}
       >
         <Avatar alt="Remy Sharp" src={md} sx={{ width: 100, height: 100 }} />
-        <Typography color="secondary.main" mt={2} variant="h6">
+        <Typography color="secondary.main" mt={2} variant="h4" fontSize="30px">
           Mubin Khan
         </Typography>
-        <Typography color="error.main" mb={4}>
+        <Typography color="black" fontWeight="bold" mb={4}>
           Managing Director, Ethics Advance Technology Ltd
         </Typography>
         <Divider />

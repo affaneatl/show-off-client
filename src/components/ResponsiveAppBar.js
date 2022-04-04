@@ -4,20 +4,16 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
-import MenuItem from "@mui/material/MenuItem";
 import logo from "../assets/eatl_logo.png";
 import Slide from "@mui/material/Slide";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
-
+import Button from "@mui/material/Button";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
 const pages = [
-  {
-    name: "About",
-    route: "/about",
-  },
   {
     name: "Prducts",
     route: "/1",
@@ -60,7 +56,14 @@ const ResponsiveAppBar = (props) => {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
   return (
     <HideOnScroll {...props}>
       <AppBar
@@ -87,30 +90,68 @@ const ResponsiveAppBar = (props) => {
               sx={{
                 flexGrow: 2,
                 justifyContent: "space-between",
+                alignItmes: "center",
                 display: { xs: "none", md: "flex" },
               }}
             >
+              
+                <Button
+                  id="basic-button"
+                  aria-controls={open ? "basic-menu" : undefined}
+                  aria-haspopup="true"
+                  aria-expanded={open ? "true" : undefined}
+                  onClick={handleClick}
+                  color= "secondary"
+                  sx={{display: { xs: 'none', md: 'block'}, fontSize: "16px", fontWeight: "bold"}}
+                >
+                  About
+                </Button>
+                <Menu
+                  id="basic-menu"
+                  anchorEl={anchorEl}
+                  open={open}
+                  onClose={handleClose}
+                  MenuListProps={{
+                    "aria-labelledby": "basic-button",
+                  }}
+                >
+                  <Link
+                    href="/about"
+                    sx={{
+                      mr: 2,
+                      flexGrow: 4,
+                      display: { xs: "none", md: "flex" },
+                      textDecoration: "none",
+                    }}
+                  >
+                    <MenuItem onClick={handleClose}>About EATL</MenuItem>
+                  </Link>
+                  <Link
+                    href="/directors-message"
+                    sx={{
+                      mr: 2,
+                      flexGrow: 4,
+                      display: { xs: "none", md: "flex" },
+                      textDecoration: "none",
+                    }}
+                  >
+                    <MenuItem onClick={handleClose}>Director's Message</MenuItem>
+                  </Link>
+                </Menu>
+              
               {pages.map((page, index) => (
-                <Link
+               
+                <Button
                   key={index}
                   href={page.route}
                   onClick={handleCloseNavMenu}
                   sx={{
-                    my: 2,
-                    display: "block",
-                    fontWeight: "700",
-                    textTransform: "uppercase",
-                    cursor: "pointer",
+                    my: 2, fontSize: "16px", fontWeight: "bold", display: 'block',
                     color: "secondary.main",
-                    textDecoration: "none",
-                    "&:hover": {
-                      cursor: "pointer",
-                      color: "#d81b60",
-                    },
                   }}
                 >
                   {page.name}
-                </Link>
+                </Button>
               ))}
             </Box>
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>

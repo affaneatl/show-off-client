@@ -30,9 +30,8 @@ function Item(props) {
         style={{ width: "100%", height: "450px", opacity: 0.9 }}
       />
       <Typography align="right"  variant="h2" color="warning.main" sx={{ position: "absolute", bottom:40, right: 70 }}>
-        Business Heading appear with
-        <span style={{display: "block", align: "right"}}>a subheading</span>
-        <span style={{display: "block",fontSize: "16px", textTransform: "capitalize"}}>sfej join bangladesh arymy anotehr day to high provfile section will be goto ubheading</span>
+        Business Heading 
+        <span style={{display: "block", align: "right"}}>appear with a subheading</span>
       </Typography>
     </Box>
   );

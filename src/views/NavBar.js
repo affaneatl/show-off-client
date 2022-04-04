@@ -100,10 +100,10 @@ export default function NavBar(props) {
             >
               Edutube
             </a>
-            <a className="topnavlink" href="#" target="_blank">
+            <a className="topnavlink" href="http://eihlbd.com/" target="_blank">
               Innovation Hub
             </a>
-            <a className="topnavlink" href="#" target="_blank">
+            <a className="topnavlink" href="https://eatlbd.com/webmail" target="_blank">
               Webmail
             </a>
           </Stack>
