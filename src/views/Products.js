@@ -11,12 +11,13 @@ import product5 from "../assets/products/5.png";
 import product6 from "../assets/products/6.png";
 import product7 from "../assets/products/7.jpg";
 import product8 from "../assets/products/8.png";
+import { Button } from "@mui/material";
 
 const products = [
   { name: "Edutube", img: product1, detail: "Teach what you love" },
-  { name: "ERP pharma", img: product2,detail: "Teach what you love" },
-  { name: "HIMS", img: product3,detail: "Teach what you love" },
-  { name: "HRMS", img: product4,detail: "Teach what you love" },
+  { name: "ERP pharma", img: product2, detail: "Teach what you love" },
+  { name: "HIMS", img: product3, detail: "Teach what you love" },
+  { name: "HRMS", img: product4, detail: "Teach what you love" },
 ];
 
 function Products() {
@@ -61,14 +62,29 @@ const ProductCard = ({ product }) => {
         {/* <img src={product.img} style={{ width: "95%" }} /> */}
         <div className="container">
           <div className="image">
-            <img style={{width: "100%", height: "auto"}} src={product.img} alt="Avatar" />
-            
+            <img
+              style={{ width: "100%", height: "auto" }}
+              src={product.img}
+              alt="Avatar"
+            />
+            <Typography align="center" variant="subtitle2" p={1} bgcolor="secondary.main" color="white">{product.name}</Typography>
           </div>
 
           <div className="overlay">
             <div className="text">
-              <h4 style={{fontSize: "18px", margin:"0"}}>{product.name}</h4>
-              <p style={{fontSize: "14px", margin: "5px"}}>{product.detail}</p>
+              <Button
+                variant="contained"
+                color="primary"
+                size="small"
+                sx={{
+                  textTransform: "capitalize",
+                  ml: 1,
+                  borderRadius: 0,
+                  boxShadow: 0,
+                }}
+              >
+                Learn More
+              </Button>
             </div>
           </div>
         </div>

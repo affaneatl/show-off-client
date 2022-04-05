@@ -10,6 +10,8 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import HomeOne from './pages/HomeOne';
 import AllProjects from './pages/AllProjects';
+import AllProducts from './pages/AllProducts';
+import LatestUpdate from './pages/LatestUpdate';
 import DirectorsMessage from './views/DirectorsMessage';
 
 AOS.init()
@@ -24,6 +26,8 @@ function App() {
         <Route path='/directors-message' element={<DirectorsMessage/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/projects' element={<AllProjects/>}/>
+        <Route path='/products' element={<AllProducts/>}/>
+        <Route path='/latest-update' element={<LatestUpdate/>}/>
       </Routes>
       <AppFooter />
     </div>

@@ -14,10 +14,22 @@ import project7 from "../assets/projects/7.jpg";
 import project8 from "../assets/projects/8.jpg";
 
 const projects = [
-  { name: "Establish e-Library Management and Set up web based Medical Student Facilities Management", img: project3 },
-  { name: "Establish e-Library Management and Set up web based Medical Student Facilities Management", img: project4 },
-  { name: "Establish e-Library Management and Set up web based Medical Student Facilities Management", img: project5 },
-  { name: "Establish e-Library Management and Set up web based Medical Student Facilities Management", img: project6 },
+  {
+    name: "Establish e-Library Management and Set up web based Medical Student Facilities Management",
+    img: project3,
+  },
+  {
+    name: "Establish e-Library Management and Set up web based Medical Student Facilities Management",
+    img: project4,
+  },
+  {
+    name: "Establish e-Library Management and Set up web based Medical Student Facilities Management",
+    img: project5,
+  },
+  {
+    name: "Establish e-Library Management and Set up web based Medical Student Facilities Management",
+    img: project6,
+  },
 ];
 
 function Projects() {
@@ -75,25 +87,23 @@ const ProjectCard = ({ project }) => {
       >
         <div className="containerr">
           <img src={project.img} alt="Avatar" className="imagee" />
-          <Typography p={2} fontWeight="bold">{project.name}</Typography>
-          <div className="overlayy">
-            <div className="textt">
-              <Button
-                variant="contained"
-                color="secondary"
-                size="small"
-                sx={{
-                  textTransform: "capitalize",
-                  mb: 2,
-                  ml: 1,
-                  borderRadius: 0,
-                  boxShadow: 0,
-                }}
-              >
-                Learn More
-              </Button>
-            </div>
-          </div>
+          <Typography p={2} fontWeight="bold">
+            {project.name}
+          </Typography>
+          <Button
+            variant="contained"
+            color="secondary"
+            size="small"
+            sx={{
+              textTransform: "capitalize",
+              mb: 2,
+              ml: 2,
+              borderRadius: 0,
+              boxShadow: 0,
+            }}
+          >
+            Learn More
+          </Button>
         </div>
       </Card>
     </Grid>

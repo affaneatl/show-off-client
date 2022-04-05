@@ -15,8 +15,8 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 const pages = [
   {
-    name: "Prducts",
-    route: "/1",
+    name: "Products",
+    route: "/products",
   },
   {
     name: "Projects",
@@ -24,7 +24,7 @@ const pages = [
   },
   {
     name: "Latest Update",
-    route: "/news",
+    route: "/latest-update",
   },
   {
     name: "Contact",
@@ -94,59 +94,64 @@ const ResponsiveAppBar = (props) => {
                 display: { xs: "none", md: "flex" },
               }}
             >
-              
-                <Button
-                  id="basic-button"
-                  aria-controls={open ? "basic-menu" : undefined}
-                  aria-haspopup="true"
-                  aria-expanded={open ? "true" : undefined}
-                  onClick={handleClick}
-                  color= "secondary"
-                  sx={{display: { xs: 'none', md: 'block'}, fontSize: "16px", fontWeight: "bold"}}
-                >
-                  About
-                </Button>
-                <Menu
-                  id="basic-menu"
-                  anchorEl={anchorEl}
-                  open={open}
-                  onClose={handleClose}
-                  MenuListProps={{
-                    "aria-labelledby": "basic-button",
+              <Button
+                id="basic-button"
+                aria-controls={open ? "basic-menu" : undefined}
+                aria-haspopup="true"
+                aria-expanded={open ? "true" : undefined}
+                onClick={handleClick}
+                color="secondary"
+                sx={{
+                  display: { xs: "none", md: "block" },
+                  fontSize: "16px",
+                  fontWeight: "bold",
+                }}
+              >
+                About
+              </Button>
+              <Menu
+                id="basic-menu"
+                anchorEl={anchorEl}
+                open={open}
+                onClose={handleClose}
+                MenuListProps={{
+                  "aria-labelledby": "basic-button",
+                }}
+              >
+                <Link
+                  href="/about"
+                  sx={{
+                    mr: 2,
+                    flexGrow: 4,
+                    display: { xs: "none", md: "flex" },
+                    textDecoration: "none",
                   }}
                 >
-                  <Link
-                    href="/about"
-                    sx={{
-                      mr: 2,
-                      flexGrow: 4,
-                      display: { xs: "none", md: "flex" },
-                      textDecoration: "none",
-                    }}
-                  >
-                    <MenuItem onClick={handleClose}>About EATL</MenuItem>
-                  </Link>
-                  <Link
-                    href="/directors-message"
-                    sx={{
-                      mr: 2,
-                      flexGrow: 4,
-                      display: { xs: "none", md: "flex" },
-                      textDecoration: "none",
-                    }}
-                  >
-                    <MenuItem onClick={handleClose}>Director's Message</MenuItem>
-                  </Link>
-                </Menu>
-              
+                  <MenuItem onClick={handleClose}>About EATL</MenuItem>
+                </Link>
+                <Link
+                  href="/directors-message"
+                  sx={{
+                    mr: 2,
+                    flexGrow: 4,
+                    display: { xs: "none", md: "flex" },
+                    textDecoration: "none",
+                  }}
+                >
+                  <MenuItem onClick={handleClose}>Director's Message</MenuItem>
+                </Link>
+              </Menu>
+
               {pages.map((page, index) => (
-               
                 <Button
                   key={index}
                   href={page.route}
                   onClick={handleCloseNavMenu}
                   sx={{
-                    my: 2, fontSize: "16px", fontWeight: "bold", display: 'block',
+                    my: 2,
+                    fontSize: "16px",
+                    fontWeight: "bold",
+                    display: "block",
                     color: "secondary.main",
                   }}
                 >
