@@ -1,16 +1,8 @@
-import React, { useRef, useState } from "react";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-
-// import required modules
-import { Pagination, Autoplay } from "swiper";
+import React from "react";
 import {
   Container,
   Box,
+  Grid,
   Card,
   CardMedia,
   CardContent,
@@ -26,7 +18,8 @@ import news3 from "../assets/news/3.jpg";
 const news = [
   {
     title: "Eatl Event Title Goes here",
-    detail: "Here is the little details about the recent event from eatl.We are making things better",
+    detail:
+      "Here is the little details about the recent event from eatl.We are making things better",
     img: { news1 },
   },
   {
@@ -43,82 +36,83 @@ const news = [
 
 export default function News() {
   return (
-    <Container sx={{ mt: 10, mb: 4 }} data-aos="fade-right" data-aos-duration="1500">
-      <Typography variant="h4" marked="center" align="center" component="h2" mb={4} color="secondary.main">
+    <Container
+      sx={{ mt: 2, mb: 4 }}
+      data-aos="fade-right"
+      data-aos-duration="1500"
+    >
+      <Typography
+        variant="h4"
+        marked="center"
+        align="center"
+        component="h2"
+        mb={4}
+        color="secondary.main"
+      >
         Latest News
       </Typography>
-      <Swiper
-      pagination={{
-        dynamicBullets: true,
-      }}
-      autoplay={{
-        delay: 2500,
-        disableOnInteraction: false,
-      }}
-      modules={[Pagination,Autoplay]}
-        slidesPerView={1}
-        spaceBetween={10}
-        className="mySwiper"
-        breakpoints={{
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          1024: {
-            slidesPerView: 4,
-            spaceBetween: 20,
-          },
-        }}
-      >
-        
-        <SwiperSlide>
+      <Grid container spacing={3} alignItems="stretch">
+        <Grid item md={4} sm={6}>
           <SlideCard />
-        </SwiperSlide>
-        <SwiperSlide>
+        </Grid>
+        <Grid item md={4} sm={6}>
           <SlideCard />
-        </SwiperSlide>
-        <SwiperSlide>
+        </Grid>
+        <Grid item md={4} sm={6}>
           <SlideCard />
-        </SwiperSlide>
-        <SwiperSlide>
+        </Grid>
+        <Grid item md={4} sm={6}>
           <SlideCard />
-        </SwiperSlide>
-        <SwiperSlide>
+        </Grid>
+        <Grid item md={4} sm={6}>
           <SlideCard />
-        </SwiperSlide>
-      </Swiper>
+        </Grid>
+        <Grid item md={4} sm={6}>
+          <SlideCard />
+        </Grid>
+        <Grid item md={4} sm={6}>
+          <SlideCard />
+        </Grid>
+      </Grid>
     </Container>
   );
 }
 
-const SlideCard = ({img,title, detail}) => {
-  return(
+const SlideCard = ({ img, title, detail }) => {
+  return (
     <Box mb={4} sx={{ bgcolor: "primary.light" }}>
-    <Card variant="outlined" sx={{ boxShadow: 0 }}>
-      <CardMedia component="img" alt="green iguana" height="140" src={news3} />
-      <CardContent>
-        <Typography gutterBottom variant="h6" component="div" align="left">
-          {news[0].title}
-        </Typography>
-        <Typography variant="body2" color="text.secondary" align="left">
-        {news[0].detail}
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button
-          variant="contained"
-          size="small"
-          color="secondary"
-          sx={{ textTransform: "capitalize", mb: 2, ml: 1, borderRadius: 0, boxShadow: 0 }}
-        >
-          See Details
-        </Button>
-      </CardActions>
-    </Card>
-  </Box>
-  )
+      <Card variant="outlined" sx={{ boxShadow: 0 }}>
+        <CardMedia
+          component="img"
+          alt="green iguana"
+          height="140"
+          src={news3}
+        />
+        <CardContent>
+          <Typography color="secondary.main" gutterBottom variant="h5" fontWeight={500} component="h3" align="left">
+            {news[0].title}
+          </Typography>
+          <Typography variant="body1" align="left">
+            {news[0].detail}
+          </Typography>
+        </CardContent>
+        <CardActions>
+          <Button
+            variant="contained"
+            size="small"
+            color="secondary"
+            sx={{
+              textTransform: "capitalize",
+              mb: 2,
+              ml: 1,
+              borderRadius: 0,
+              boxShadow: 0,
+            }}
+          >
+            See Details
+          </Button>
+        </CardActions>
+      </Card>
+    </Box>
+  );
 };

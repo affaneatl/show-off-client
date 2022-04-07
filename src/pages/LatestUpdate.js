@@ -1,12 +1,12 @@
-import { Container } from '@mui/material'
-import React from 'react'
-import News from '../views/News'
+import { Container } from "@mui/material";
+import React from "react";
+import News from "../views/News";
 function LatestUpdate() {
   return (
     <Container sx={{ mb: 8 }}>
-        <News/>
+      <News />
     </Container>
-  )
+  );
 }
 
-export default LatestUpdate
+export default LatestUpdate;
