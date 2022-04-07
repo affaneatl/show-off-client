@@ -12,6 +12,7 @@ import project5 from "../assets/projects/5.jpg";
 import project6 from "../assets/projects/6.jpg";
 import project7 from "../assets/projects/7.jpg";
 import project8 from "../assets/projects/8.jpg";
+import { Link } from "@mui/material";
 
 const projects = [
   {
@@ -90,20 +91,22 @@ const ProjectCard = ({ project }) => {
           <Typography p={2} fontWeight="bold">
             {project.name}
           </Typography>
-          <Button
-            variant="contained"
-            color="secondary"
-            size="small"
-            sx={{
-              textTransform: "capitalize",
-              mb: 2,
-              ml: 2,
-              borderRadius: 0,
-              boxShadow: 0,
-            }}
-          >
-            Learn More
-          </Button>
+          <Link href="/projects" underline="none">
+            <Button
+              variant="contained"
+              color="secondary"
+              size="small"
+              sx={{
+                textTransform: "capitalize",
+                mb: 2,
+                ml: 2,
+                borderRadius: 0,
+                boxShadow: 0,
+              }}
+            >
+              Learn More
+            </Button>
+          </Link>
         </div>
       </Card>
     </Grid>

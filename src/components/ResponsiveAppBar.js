@@ -13,6 +13,7 @@ import useScrollTrigger from "@mui/material/useScrollTrigger";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 const pages = [
   {
     name: "Products",
@@ -95,6 +96,7 @@ const ResponsiveAppBar = (props) => {
               }}
             >
               <Button
+                endIcon={<ArrowDropDownIcon />}
                 id="basic-button"
                 aria-controls={open ? "basic-menu" : undefined}
                 aria-haspopup="true"
@@ -102,7 +104,7 @@ const ResponsiveAppBar = (props) => {
                 onClick={handleClick}
                 color="secondary"
                 sx={{
-                  display: { xs: "none", md: "block" },
+                  display: { xs: "none", md: "flex" },
                   fontSize: "16px",
                   fontWeight: "bold",
                 }}

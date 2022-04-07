@@ -12,6 +12,7 @@ import product6 from "../assets/products/6.png";
 import product7 from "../assets/products/7.jpg";
 import product8 from "../assets/products/8.png";
 import { Button } from "@mui/material";
+import { Link } from "@mui/material";
 
 const products = [
   { name: "Edutube", img: product1, detail: "Teach what you love" },
@@ -72,6 +73,7 @@ const ProductCard = ({ product }) => {
 
           <div className="overlay">
             <div className="text">
+              <Link href="/products" underline="none">
               <Button
                 variant="contained"
                 color="primary"
@@ -84,7 +86,7 @@ const ProductCard = ({ product }) => {
                 }}
               >
                 Learn More
-              </Button>
+              </Button></Link>
             </div>
           </div>
         </div>
