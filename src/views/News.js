@@ -19,7 +19,6 @@ import {
 } from "@mui/material";
 import Typography from "../components/Typography";
 import "swiper/css/navigation";
-import EatlEvent from "./EatlEvent";
 import news1 from "../assets/news/1.jpg";
 import news2 from "../assets/news/2.jpg";
 import news3 from "../assets/news/3.jpg";
