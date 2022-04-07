@@ -6,7 +6,7 @@ import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import Zoom from "@mui/material/Zoom";
 import ResponsiveAppBar from "../components/ResponsiveAppBar";
 import { Container, Stack } from "@mui/material";
-import CallIcon from "@mui/icons-material/Call";
+import YouTubeIcon from "@mui/icons-material/YouTube";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import EmailIcon from "@mui/icons-material/Email";
 
@@ -55,16 +55,6 @@ export default function NavBar(props) {
             justifyContent="center"
             alignItems="center"
           >
-            <CallIcon
-              fontSize="small"
-              sx={{
-                color: "white",
-                "&:hover": {
-                  cursor: "pointer",
-                  color: "rgb(189, 243, 158)",
-                },
-              }}
-            />
             <FacebookIcon
               fontSize="small"
               sx={{
@@ -75,7 +65,7 @@ export default function NavBar(props) {
                 },
               }}
             />
-            <EmailIcon
+            <YouTubeIcon
               fontSize="small"
               sx={{
                 color: "white",
@@ -103,7 +93,11 @@ export default function NavBar(props) {
             <a className="topnavlink" href="http://eihlbd.com/" target="_blank">
               Innovation Hub
             </a>
-            <a className="topnavlink" href="https://eatlbd.com/webmail" target="_blank">
+            <a
+              className="topnavlink"
+              href="https://eatlbd.com/webmail"
+              target="_blank"
+            >
               Webmail
             </a>
           </Stack>
