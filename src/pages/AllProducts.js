@@ -29,7 +29,7 @@ function AllProducts() {
   const classes = useStyles();
 
   return (
-    <Container sx={{ mb: 8 }}>
+    <Container sx={{ mb: 8 }} data-aos="fade-down" data-aos-duration="1000">
       <Paper
         variant="outlined"
         className={classes.container}

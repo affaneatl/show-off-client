@@ -13,7 +13,7 @@ function AllProjects() {
   return (
     <Container sx={{ mb: 8 }}>
       <Typography variant="h4" color="secondary">Our Projects</Typography>
-      <Box sx={{ p: 4, borderLeft: 10, mb: 4, borderColor: 'primary.main'}}>
+      <Box data-aos="fade-down" data-aos-duration="1000" sx={{ p: 4, borderLeft: 10, mb: 4, borderColor: 'primary.main'}} data-aos="fade-down" data-aos-duration="1000">
         <Typography
           variant="h4"
           color="primary.main"
@@ -46,7 +46,7 @@ function AllProjects() {
         </Typography>
       </Box>
 
-      <Box sx={{ p: 4, borderLeft: 10, mb: 4, borderColor: 'secondary.main'}}>
+      <Box data-aos="fade-down" data-aos-duration="1000" sx={{ p: 4, borderLeft: 10, mb: 4, borderColor: 'secondary.main'}}>
         <Typography
           variant="h4"
           color="primary.main"
@@ -87,7 +87,7 @@ function AllProjects() {
         </Typography>
       </Box>
 
-      <Box sx={{ p: 4, borderLeft: 10, mb: 4 ,borderColor: 'primary.main'}}>
+      <Box data-aos="fade-down" data-aos-duration="1000" sx={{ p: 4, borderLeft: 10, mb: 4 ,borderColor: 'primary.main'}}>
         <Typography
           variant="h4"
           color="primary.main"
@@ -120,7 +120,7 @@ function AllProjects() {
           then store the data to the NU EMS server.
         </Typography>
       </Box>
-      <Box sx={{ p: 4, borderLeft: 10, mb: 4,borderColor: 'secondary.main' }}>
+      <Box data-aos="fade-down" data-aos-duration="1000" sx={{ p: 4, borderLeft: 10, mb: 4,borderColor: 'secondary.main' }}>
         <Typography
           variant="h4"
           color="primary.main"
@@ -153,7 +153,7 @@ function AllProjects() {
           months support services, and (x) SMS services possessing.
         </Typography>
       </Box>
-      <Box sx={{ p: 4, borderLeft: 10, mb: 4, borderColor: 'primary.main' }}>
+      <Box data-aos="fade-down" data-aos-duration="1000" sx={{ p: 4, borderLeft: 10, mb: 4, borderColor: 'primary.main' }}>
         <Typography
           variant="h4"
           color="primary.main"
@@ -198,7 +198,7 @@ function AllProjects() {
           education information from BANBEIS
         </Typography>
       </Box>
-      <Box sx={{ p: 4, borderLeft: 10, mb: 4,borderColor: 'secondary.main'}}>
+      <Box data-aos="fade-down" data-aos-duration="1000" sx={{ p: 4, borderLeft: 10, mb: 4,borderColor: 'secondary.main'}}>
         <Typography
           variant="h4"
           color="primary.main"
@@ -231,7 +231,7 @@ function AllProjects() {
           education information from BANBEIS
         </Typography>
       </Box>
-      <Box sx={{ p: 4, borderLeft: 10, mb: 4 ,borderColor: 'primary.main'}}>
+      <Box data-aos="fade-down" data-aos-duration="1000" sx={{ p: 4, borderLeft: 10, mb: 4 ,borderColor: 'primary.main'}}>
         <Typography
           variant="h4"
           color="primary.main"
@@ -268,7 +268,7 @@ function AllProjects() {
           education information from BANBEIS
         </Typography>
       </Box>
-      <Box sx={{ p: 4, borderLeft: 10, mb: 4, borderColor: 'secondary.main' }}>
+      <Box data-aos="fade-down" data-aos-duration="1000" sx={{ p: 4, borderLeft: 10, mb: 4, borderColor: 'secondary.main' }}>
         <Typography
           variant="h4"
           color="primary.main"
@@ -293,7 +293,7 @@ function AllProjects() {
           staff EATL in house technical team developing the e-learning content.
         </Typography>
       </Box>
-      <Box sx={{ p: 4, borderLeft: 10, mb: 4 ,borderColor: 'primary.main'}}>
+      <Box data-aos="fade-down" data-aos-duration="1000" sx={{ p: 4, borderLeft: 10, mb: 4 ,borderColor: 'primary.main'}}>
         <Typography
           variant="h4"
           color="primary.main"
@@ -318,7 +318,7 @@ function AllProjects() {
           staff EATL in house technical team developing the e-learning content.
         </Typography>
       </Box>
-      <Box sx={{ p: 4, borderLeft: 10, mb: 4 ,borderColor: 'secondary.main'}}>
+      <Box data-aos="fade-down" data-aos-duration="1000" sx={{ p: 4, borderLeft: 10, mb: 4 ,borderColor: 'secondary.main'}}>
         <Typography
           variant="h4"
           color="primary.main"

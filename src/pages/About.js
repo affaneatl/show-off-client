@@ -30,7 +30,7 @@ function About() {
           marginBottom: 2,
         }}
       >
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6} data-aos="fade-right" data-aos-duration="1500">
           <Typography variant="body1" gutterBottom display="block">
             Ethics Advance Technology Limited Background Ethics Advance
             Technology Limited (EATL) is a leading private company with
@@ -50,11 +50,11 @@ function About() {
             global.
           </Typography>
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6} data-aos="fade-left" data-aos-duration="1500">
           <img style={{ width: "100%", height: "300px" }} src={img4} />
         </Grid>
       </Grid>
-      <Grid container spacing={2} sx={{ marginTop: 2 }}>
+      <Grid container spacing={2} sx={{ marginTop: 2 }} data-aos="fade-down" data-aos-duration="1000">
         <Grid item md={4} sm={12}>
           <img className="imgStyle" src={img1} />
         </Grid>
@@ -89,10 +89,10 @@ function About() {
         spacing={2}
         sx={{ p: 2, border: 1, mt: 3, borderColor: "primary.main" }}
       >
-        <Grid item md={6}>
+        <Grid item md={6} data-aos="fade-right" data-aos-duration="1500">
           <Expertise />
         </Grid>
-        <Grid item md={6}>
+        <Grid item md={6} data-aos="fade-left" data-aos-duration="1500">
           <Strategies />
         </Grid>
       </Grid>

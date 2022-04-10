@@ -19,7 +19,7 @@ function Contact() {
           justifyContent: "center",
         }}
       >
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6} data-aos="fade-left" data-aos-duration="1000">
           <Stack
             direction="column"
             spacing={2}
@@ -68,7 +68,7 @@ function Contact() {
             </Box>
           </Stack>
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6} data-aos="fade-right" data-aos-duration="1000">
           <Stack direction="column" spacing={2}>
             <Typography fontSize="30px" color="primary.main" variant="h3">
               Send us a message
@@ -104,7 +104,7 @@ function Contact() {
             </Button>
           </Stack>
         </Grid>
-        <Grid item xs={12} md={12}>
+        <Grid item xs={12} md={12} data-aos="fade-down" data-aos-duration="1000">
           <div className="google-map-code">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.853328729751!2d90.4274046147697!3d23.82381408455325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c79e609ca88b%3A0xfb4ce8cee33a3173!2sEthics%20Advance%20Technology%20Limited!5e0!3m2!1sen!2sbd!4v1648550161706!5m2!1sen!2sbd"

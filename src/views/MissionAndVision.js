@@ -3,7 +3,7 @@ import Typography from "../components/Typography";
 
 function MissionAndVision() {
   return (
-    <>
+    <div data-aos="fade-down" data-aos-duration="1000">
       <Typography fontSize={35} variant="h4"  mt={2} color="primary.main">
         Our Mission
       </Typography>
@@ -33,7 +33,7 @@ function MissionAndVision() {
           and technical excellence
         </li>
       </ul>
-    </>
+    </div>
   );
 }
 

@@ -1,13 +1,12 @@
 import React, { Suspense } from 'react';
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import NavBar from "./views/NavBar";
-import AppFooter from "./views/AppFooter";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "animate.css";
-// import Home from "./pages/Home";
 import Spinner from './components/Spinner';
+const NavBar = React.lazy(() => import("./views/NavBar"));
+const AppFooter = React.lazy(() => import("./views/AppFooter"));
 const Home = React.lazy(() => import("./pages/Home"));
 const About = React.lazy(() => import("./pages/About"));
 const DirectorsMessage = React.lazy(() => import("./views/DirectorsMessage"));
