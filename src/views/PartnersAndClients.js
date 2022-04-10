@@ -72,8 +72,8 @@ function PartnersAndClients() {
           },
         }}
       >
-        {partners.map((partner) => (
-          <SwiperSlide>
+        {partners.map((partner, index) => (
+          <SwiperSlide key={index}>
             <Card
               data-aos="flip-left"
               data-aos-duration="1500"
