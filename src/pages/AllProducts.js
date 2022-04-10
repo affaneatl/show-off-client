@@ -1,10 +1,11 @@
-import { Box, Card, Container, Paper } from "@mui/material";
+import { Box, Card, Container, Grid, Paper } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import React from "react";
 import Typography from "../components/Typography";
 import edutube from "../assets/products/1.jpg";
 import Products from "../views/Products";
-
+import edu1 from "../assets/edu-1.png";
+import edu2 from "../assets/edu-2.png";
 const useStyles = makeStyles({
   container: {
     position: "relative",
@@ -61,7 +62,16 @@ function AllProducts() {
             AHmed Palak, ICT Division was present as special guest. Managing
             Director, and Chairman EATL, Mr. M A Mubin Khan was also present in
             the panel.
-            <br />
+          </Typography>
+          <Grid container spacing={3} sx={{mb: 2 , mt: 2 }}>
+            <Grid item md={6}>
+              <img className="img-responsive" src={edu1} />
+            </Grid>
+            <Grid item md={6}>
+              <img className="img-responsive" src={edu2} />
+            </Grid>
+          </Grid>
+          <Typography>
             edutubebd is one of the key initiative of Ethics Advanced Technology
             Limited (EATL) for the development of country’s education sector to
             change them in a different level. It is the only education portal
