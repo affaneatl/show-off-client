@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Card, Container, Box, Divider } from "@mui/material";
+import { Container, Box, Divider } from "@mui/material";
 import Typography from "../components/Typography";
 
 const Projects = [

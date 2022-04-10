@@ -1,7 +1,6 @@
 import React from "react";
 import Carousel from "react-material-ui-carousel";
-import { Box, Container, Typography } from "@mui/material";
-import backgroundImage from "../assets/backgroundImage.png";
+import { Box, Typography } from "@mui/material";
 import banner1 from "../assets/banner1.jpg";
 import banner2 from "../assets/banner2.jpg";
 import banner3 from "../assets/banner3.jpg";
