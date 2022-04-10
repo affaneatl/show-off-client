@@ -55,26 +55,38 @@ export default function NavBar(props) {
             justifyContent="center"
             alignItems="center"
           >
-            <FacebookIcon
-              fontSize="small"
-              sx={{
-                color: "white",
-                "&:hover": {
-                  cursor: "pointer",
-                  color: "rgb(189, 243, 158)",
-                },
-              }}
-            />
-            <YouTubeIcon
-              fontSize="small"
-              sx={{
-                color: "white",
-                "&:hover": {
-                  cursor: "pointer",
-                  color: "rgb(189, 243, 158)",
-                },
-              }}
-            />
+            <a
+              className="topnavlink"
+              href="https://www.facebook.com/Ethics-Advance-Technology-Ltd-431994670167861/"
+              target="_blank"
+            >
+              <FacebookIcon
+                fontSize="small"
+                sx={{
+                  color: "white",
+                  "&:hover": {
+                    cursor: "pointer",
+                    color: "rgb(189, 243, 158)",
+                  },
+                }}
+              />
+            </a>
+            <a
+              className="topnavlink"
+              href="https://www.youtube.com/c/Edutubebd/"
+              target="_blank"
+            >
+              <YouTubeIcon
+                fontSize="small"
+                sx={{
+                  color: "white",
+                  "&:hover": {
+                    cursor: "pointer",
+                    color: "rgb(189, 243, 158)",
+                  },
+                }}
+              />
+            </a>
           </Stack>
           <Stack
             direction="row"

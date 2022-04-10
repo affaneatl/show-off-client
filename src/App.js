@@ -14,6 +14,7 @@ import AllProducts from "./pages/AllProducts";
 import LatestUpdate from "./pages/LatestUpdate";
 import DirectorsMessage from "./views/DirectorsMessage";
 import NotFound from "./views/NotFound";
+import NewsDetails from "./views/NewsDetails";
 
 AOS.init();
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Route path="/projects" element={<AllProjects />} />
         <Route path="/products" element={<AllProducts />} />
         <Route path="/latest-update" element={<LatestUpdate />} />
+        <Route path="/news-details" element={<NewsDetails />} />
         <Route
           path="*"
           element={<NotFound />}

@@ -101,6 +101,7 @@ const SlideCard = ({ img, title, detail }) => {
             variant="contained"
             size="small"
             color="secondary"
+            href='/news-details'
             sx={{
               textTransform: "capitalize",
               mb: 2,
