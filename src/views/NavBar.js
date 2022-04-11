@@ -8,7 +8,6 @@ import ResponsiveAppBar from "../components/ResponsiveAppBar";
 import { Container, Stack } from "@mui/material";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import EmailIcon from "@mui/icons-material/Email";
 
 function ScrollTop(props) {
   const { children, window } = props;

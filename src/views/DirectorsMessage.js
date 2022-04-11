@@ -13,14 +13,14 @@ function Services() {
     <>
       <Typography
         color="primary.main"
-        variant="h4"
+        variant="h3"
         marked="center"
         align="center"
       >
         Message from the Director
       </Typography>
-      <Box
-        sx={{ mt: 2, mb: 8, p: 6 }}
+      <Container
+        sx={{ mt: 2, mb: 8, p: 6, borderRadius: 2 }}
         className="custombg"
         data-aos="zoom-in"
         data-aos-duration="1500"
@@ -75,7 +75,7 @@ function Services() {
             growth.
           </Typography>
         </Box>
-      </Box>
+      </Container>
     </>
   );
 }
