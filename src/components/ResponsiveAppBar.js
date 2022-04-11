@@ -76,7 +76,7 @@ const ResponsiveAppBar = (props) => {
         // className="customAppbar"
       >
         <Container>
-          <Toolbar disableGutters id="back-to-top-anchor">
+          <Toolbar disableGutters>
             <Link
               href="/"
               sx={{
