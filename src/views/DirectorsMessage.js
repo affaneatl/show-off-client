@@ -1,13 +1,11 @@
-import { Container, Grid } from "@mui/material";
+import { Container } from "@mui/material";
 import React from "react";
 import Typography from "../components/Typography";
 import Box from "@mui/material/Box";
-import AcUnitIcon from "@mui/icons-material/AcUnit";
-import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
-import AssuredWorkloadIcon from "@mui/icons-material/AssuredWorkload";
 import Avatar from "@mui/material/Avatar";
 import Divider from "@mui/material/Divider";
 import md from "../assets/md.jpg";
+
 function Services() {
   return (
     <>

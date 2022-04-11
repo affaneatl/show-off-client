@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Grid } from "@mui/material";
 import Typography from "../components/Typography";
-import DirectorsMessage from "../views/DirectorsMessage";
 import MissionAndVision from "../views/MissionAndVision";
 import img1 from "../assets/Screenshot_2.png";
 import img2 from "../assets/Screenshot_3.png";
