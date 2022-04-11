@@ -209,12 +209,12 @@ br {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #000;
+  background: #fff;
 }
 .wave {
   width: 5px;
   height: 100px;
-  background: linear-gradient(45deg, cyan, #fff);
+  background: linear-gradient(45deg, #11337a, #741e58);
   margin: 10px;
   animation: wave 1s linear infinite;
   border-radius: 20px;

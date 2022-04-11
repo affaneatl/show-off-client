@@ -13,7 +13,8 @@ import useScrollTrigger from "@mui/material/useScrollTrigger";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import { Divider } from "@mui/material";
 const pages = [
   {
     name: "Products",
@@ -191,10 +192,30 @@ const ResponsiveAppBar = (props) => {
                 }}
               >
                 {pages.map((page, index) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page.name}</Typography>
+                  <MenuItem key={index} onClick={handleCloseNavMenu}>
+                    <Link
+                      key={index}
+                      href={page.route}
+                      sx={{ textDecoration: "none" }}
+                    >
+                      {page.name}
+                    </Link>
+                    <Divider orientation="vertical" />
                   </MenuItem>
                 ))}
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <Link href="/about" sx={{ textDecoration: "none" }}>
+                    About Eatl
+                  </Link>
+                </MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <Link
+                    href="/directors-message"
+                    sx={{ textDecoration: "none" }}
+                  >
+                    Directors Message
+                  </Link>
+                </MenuItem>
               </Menu>
             </Box>
             <Link

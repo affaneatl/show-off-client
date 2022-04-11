@@ -100,7 +100,7 @@ function PartnersAndClients() {
               <Typography
                 p={2}
                 sx={{
-                  fontweight:"regular",
+                  fontWeight:"regular",
                   "&:hover": {
                     border: "2px solid white",
                   },

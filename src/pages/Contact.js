@@ -29,7 +29,7 @@ function Contact() {
             <Typography variant="h4" component="h3" color="primary">
               Contact Us
             </Typography>
-            <Typography fontweight="bold" variant="subtitle1">
+            <Typography fontWeight="bold" variant="subtitle1">
               Ethics Advance Technology LTD
             </Typography>
             <Box>
