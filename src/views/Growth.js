@@ -4,7 +4,7 @@ import Typography from "../components/Typography";
 export default function Growth() {
   return (
     <div data-aos="fade-down" data-aos-duration="1000">
-        <Typography fontSize={35} variant="h4"  mt={2} color="primary.main">EATL Growth and Strategic Revolution in ICT</Typography>
+        <Typography fontSize={35} variant="h4"  mt={2}>EATL Growth and Strategic Revolution in ICT</Typography>
       <ul>
         <li>EATL launched mobile Apps Store in 2012 & branded as “EATLApps”</li>
         <li>

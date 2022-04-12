@@ -4,7 +4,7 @@ import Typography from "../components/Typography";
 function MissionAndVision() {
   return (
     <div data-aos="fade-down" data-aos-duration="1000">
-      <Typography fontSize={35} variant="h4"  mt={2} color="primary.main">
+      <Typography fontSize={35} variant="h4"  mt={2}>
         Our Mission
       </Typography>
       <Typography gutterBottom>
@@ -13,7 +13,7 @@ function MissionAndVision() {
         tools
       </Typography>
       
-      <Typography fontSize={35} variant="h4" mt={2} color="primary.main">
+      <Typography fontSize={35} variant="h4" mt={2}>
         Our Vision
       </Typography>
       <ul>

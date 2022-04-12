@@ -45,7 +45,6 @@ function Projects() {
         marked="center"
         align="center"
         component="h2"
-        color="secondary.main"
         sx={{ mb: 4 }}
       >
         Latest Projects

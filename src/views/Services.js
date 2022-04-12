@@ -47,13 +47,11 @@ function Services() {
         align="center"
         component="h2"
         sx={{ mb: 4 }}
-        color="secondary.main"
       >
         Services We Provide
       </Typography>
       <Typography
         variant="subtitle1"
-        color="secondary.main"
         gutterBottom
         align="center"
       >

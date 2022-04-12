@@ -47,7 +47,6 @@ export default function News() {
         align="center"
         component="h2"
         mb={4}
-        color="secondary.main"
       >
         Latest News
       </Typography>
@@ -89,7 +88,7 @@ const SlideCard = ({ img, title, detail }) => {
           src={news3}
         />
         <CardContent>
-          <Typography color="secondary.main" gutterBottom variant="h5" fontWeight={500} component="h3" align="left">
+          <Typography gutterBottom variant="h5" fontWeight={500} component="h3" align="left">
             {news[0].title}
           </Typography>
           <Typography variant="body1" align="left">

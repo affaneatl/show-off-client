@@ -12,12 +12,11 @@ const Projects = [
 function AllProjects() {
   return (
     <Container sx={{ mb: 8 }}>
-      <Typography variant="h4" color="secondary">Our Projects</Typography>
+      <Typography variant="h4" marked="center" align="center">Our Projects</Typography>
       <Box data-aos="fade-down" data-aos-duration="1000" sx={{ p: 4, borderLeft: 10, mb: 4, borderColor: 'primary.main'}} data-aos="fade-down" data-aos-duration="1000">
         <Typography
-          variant="h4"
-          color="primary.main"
-          fontSize="35px"
+          variant="h5"
+          fontSize="25px"
           gutterBottom
         >
           Support conducting online teaching-learning of undergraduate students
@@ -48,9 +47,8 @@ function AllProjects() {
 
       <Box data-aos="fade-down" data-aos-duration="1000" sx={{ p: 4, borderLeft: 10, mb: 4, borderColor: 'secondary.main'}}>
         <Typography
-          variant="h4"
-          color="primary.main"
-          fontSize="35px"
+          variant="h5"
+          fontSize="25px"
           gutterBottom
         >
           Learning Management System (LMS) with online Class
@@ -89,9 +87,8 @@ function AllProjects() {
 
       <Box data-aos="fade-down" data-aos-duration="1000" sx={{ p: 4, borderLeft: 10, mb: 4 ,borderColor: 'primary.main'}}>
         <Typography
-          variant="h4"
-          color="primary.main"
-          fontSize="35px"
+          variant="h5"
+          fontSize="25px"
           gutterBottom
         >
           Development & Implementation of Examination Management System for
@@ -122,9 +119,8 @@ function AllProjects() {
       </Box>
       <Box data-aos="fade-down" data-aos-duration="1000" sx={{ p: 4, borderLeft: 10, mb: 4,borderColor: 'secondary.main' }}>
         <Typography
-          variant="h4"
-          color="primary.main"
-          fontSize="35px"
+          variant="h5"
+          fontSize="25px"
           gutterBottom
         >
           Establish e-Library Management and Set up web based Medical Student
@@ -155,9 +151,8 @@ function AllProjects() {
       </Box>
       <Box data-aos="fade-down" data-aos-duration="1000" sx={{ p: 4, borderLeft: 10, mb: 4, borderColor: 'primary.main' }}>
         <Typography
-          variant="h4"
-          color="primary.main"
-          fontSize="35px"
+          variant="h5"
+          fontSize="25px"
           gutterBottom
         >
           Software design and development for Educational Information Management
@@ -200,9 +195,8 @@ function AllProjects() {
       </Box>
       <Box data-aos="fade-down" data-aos-duration="1000" sx={{ p: 4, borderLeft: 10, mb: 4,borderColor: 'secondary.main'}}>
         <Typography
-          variant="h4"
-          color="primary.main"
-          fontSize="35px"
+          variant="h5"
+          fontSize="25px"
           gutterBottom
         >
           Contract for Consultant’s Services For The Development Of E-Learning
@@ -233,9 +227,8 @@ function AllProjects() {
       </Box>
       <Box data-aos="fade-down" data-aos-duration="1000" sx={{ p: 4, borderLeft: 10, mb: 4 ,borderColor: 'primary.main'}}>
         <Typography
-          variant="h4"
-          color="primary.main"
-          fontSize="35px"
+          variant="h5"
+          fontSize="25px"
           gutterBottom
         >
           Development of E-learning Campaign
@@ -270,9 +263,8 @@ function AllProjects() {
       </Box>
       <Box data-aos="fade-down" data-aos-duration="1000" sx={{ p: 4, borderLeft: 10, mb: 4, borderColor: 'secondary.main' }}>
         <Typography
-          variant="h4"
-          color="primary.main"
-          fontSize="35px"
+          variant="h5"
+          fontSize="25px"
           gutterBottom
         >
           Procurement of Development and supply of e-Manuals in Physics,
@@ -295,9 +287,8 @@ function AllProjects() {
       </Box>
       <Box data-aos="fade-down" data-aos-duration="1000" sx={{ p: 4, borderLeft: 10, mb: 4 ,borderColor: 'primary.main'}}>
         <Typography
-          variant="h4"
-          color="primary.main"
-          fontSize="35px"
+          variant="h5"
+          fontSize="25px"
           gutterBottom
         >
           Procurement of Contextualization and Supply of e-Learning Resources
@@ -320,9 +311,8 @@ function AllProjects() {
       </Box>
       <Box data-aos="fade-down" data-aos-duration="1000" sx={{ p: 4, borderLeft: 10, mb: 4 ,borderColor: 'secondary.main'}}>
         <Typography
-          variant="h4"
-          color="primary.main"
-          fontSize="35px"
+          variant="h5"
+          fontSize="25px"
           gutterBottom
         >
           Development of Web Based Automation System for the Educational

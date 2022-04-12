@@ -5,7 +5,7 @@ import Typography from "../components/Typography";
 function Expertise() {
   return (
     <>
-      <Typography fontSize={35} variant="h4" mt={2} color="primary.main">
+      <Typography fontSize={35} variant="h4" mt={2}>
         EATL Expertise’s
       </Typography>
       <ul>

@@ -9,7 +9,7 @@ const rawTheme = createTheme({
       dark: "#eb4255",
     },
     secondary: {
-      light: '#f5d6eb',
+      light: '#FAEEE0',
       main: '#741e58',
       dark: '#741e58',
     },
@@ -72,16 +72,18 @@ const theme = {
       ...rawTheme.typography.h3,
       ...fontHeader,
       fontSize: 42,
+      color: rawTheme.palette.primary.main,
     },
     h4: {
       ...rawTheme.typography.h4,
       ...fontHeader,
-      fontSize: 48,
+      fontSize: 44,
+      color: rawTheme.palette.primary.main,
     },
     h5: {
       ...rawTheme.typography.h5,
       fontSize: 20,
-      fontWeight: rawTheme.typography.fontWeightLight,
+      color: rawTheme.palette.secondary.main,
     },
     h6: {
       ...rawTheme.typography.h6,
@@ -96,10 +98,12 @@ const theme = {
       ...rawTheme.typography.body2,
       fontWeight: rawTheme.typography.fontWeightRegular,
       fontSize: 16,
+      textAlign: 'justify'
     },
     body2: {
       ...rawTheme.typography.body1,
       fontSize: 14,
+      textAlign: 'justify'
     },
   },
 };

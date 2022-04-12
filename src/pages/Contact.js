@@ -5,6 +5,7 @@ import { TextField } from "@mui/material";
 import CallIcon from "@mui/icons-material/Call";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import EmailIcon from "@mui/icons-material/Email";
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 function Contact() {
   return (
     <Container sx={{ mb: 8 }}>
@@ -24,9 +25,8 @@ function Contact() {
             direction="column"
             spacing={2}
             justifyContent="center"
-            align="center"
           >
-            <Typography variant="h4" component="h3" color="primary">
+            <Typography variant="h4">
               Contact Us
             </Typography>
             <Typography fontWeight="bold" variant="subtitle1">
@@ -37,8 +37,16 @@ function Contact() {
                 <Box
                   sx={{
                     display: "flex",
-                    alignItems: "center",
                     justifyContent: "center",
+                  }}
+                >
+                  <LocationOnIcon fontSize="small" />
+                  <span style={{ marginLeft: "10px" }}> Corporate Office: Rupayan Shopping Square, Level-5, Plot-2, Block-G, Sayem Sobhan Anvir Road, Bashundhara R/A, Dhaka-1229, Bangladesh.</span>
+                </Box>
+                <Box
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
                   }}
                 >
                   <CallIcon fontSize="small" />
@@ -48,7 +56,6 @@ function Contact() {
                   sx={{
                     display: "flex",
                     alignItems: "center",
-                    justifyContent: "center",
                   }}
                 >
                   <FacebookIcon fontSize="small" />
@@ -58,7 +65,6 @@ function Contact() {
                   sx={{
                     display: "flex",
                     alignItems: "center",
-                    justifyContent: "center",
                   }}
                 >
                   <EmailIcon fontSize="small" />
@@ -70,7 +76,7 @@ function Contact() {
         </Grid>
         <Grid item xs={12} md={6} data-aos="fade-right" data-aos-duration="1000">
           <Stack direction="column" spacing={2}>
-            <Typography fontSize="30px" color="primary.main" variant="h3">
+            <Typography fontSize="30px" variant="h3">
               Send us a message
             </Typography>
             <Typography variant="body1" display="block">

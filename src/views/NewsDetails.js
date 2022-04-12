@@ -5,7 +5,7 @@ import news2 from "../assets/news/2.jpg";
 function NewsDetails() {
   return (
     <Container sx={{ mb: 8, mt: 2 }}>
-      <Typography variant="h3" color="secondary.main" mb={4}>
+      <Typography variant="h3" mb={4}>
         Ethics Advanced Technology Limited (EATL) has launched Bangladesh First
         educational content sharing portal
       </Typography>

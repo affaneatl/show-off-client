@@ -42,7 +42,6 @@ function AllProducts() {
           <Typography
             sx={{ marginTop: "50px", mb: 2 }}
             variant="h3"
-            color="secondary.main"
           >
             Edutube
           </Typography>

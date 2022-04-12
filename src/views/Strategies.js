@@ -4,7 +4,7 @@ import Typography from "../components/Typography";
 function Strategies() {
   return (
     <>
-        <Typography fontSize={35} variant="h4"  mt={2} color="primary.main">EATL Strategies & Focus Areas</Typography>
+        <Typography fontSize={35} variant="h4"  mt={2}>EATL Strategies & Focus Areas</Typography>
       <ul>
         <li> Mobile Applications development and Mobile App store.</li>
         <li> WEB based MIS and data management system.</li>

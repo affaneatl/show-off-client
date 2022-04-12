@@ -30,7 +30,6 @@ function Products() {
         align="center"
         component="h2"
         sx={{ mb: 4 }}
-        color="secondary.main"
       >
         Featured Products
       </Typography>

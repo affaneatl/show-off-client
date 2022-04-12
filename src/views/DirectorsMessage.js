@@ -10,7 +10,6 @@ function Services() {
   return (
     <>
       <Typography
-        color="primary.main"
         variant="h3"
         marked="center"
         align="center"
@@ -33,7 +32,6 @@ function Services() {
         >
           <Avatar alt="Remy Sharp" src={md} sx={{ width: 100, height: 100 }} />
           <Typography
-            color="secondary.main"
             mt={2}
             variant="h4"
             fontSize="30px"
