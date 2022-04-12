@@ -5,16 +5,16 @@ const rawTheme = createTheme({
   palette: {
     primary: {
       light: "#f8bac1",
-      main: "#11337a",
+      main: "#1A374D",
       dark: "#eb4255",
     },
     secondary: {
       light: '#FAEEE0',
-      main: '#741e58',
+      main: '#406882',
       dark: '#741e58',
     },
     warning: {
-      main: '#ffc071',
+      main: '#F0D290',
       dark: '#ffb25e',
     },
     error: {

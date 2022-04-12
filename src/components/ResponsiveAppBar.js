@@ -103,7 +103,7 @@ const ResponsiveAppBar = (props) => {
                 aria-haspopup="true"
                 aria-expanded={open ? "true" : undefined}
                 onClick={handleClick}
-                color="secondary"
+                color="primary"
                 sx={{
                   display: { xs: "none", md: "flex" },
                   fontSize: "16px",
@@ -155,7 +155,7 @@ const ResponsiveAppBar = (props) => {
                     fontSize: "16px",
                     fontWeight: "bold",
                     display: "block",
-                    color: "secondary.main",
+                    color: "primary.main",
                   }}
                 >
                   {page.name}

@@ -50,7 +50,7 @@ function Contact() {
                   }}
                 >
                   <CallIcon fontSize="small" />
-                  <span style={{ marginLeft: "10px" }}> +024541448</span>
+                  <span style={{ marginLeft: "10px" }}> +88-02-8153220, +88-02-8153219</span>
                 </Box>
                 <Box
                   sx={{

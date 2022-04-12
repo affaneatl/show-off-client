@@ -87,7 +87,7 @@ const ProjectCard = ({ project }) => {
       >
         <div className="containerr">
           <img src={project.img} alt="Avatar" className="imagee" />
-          <Typography p={2} fontWeight="bold">
+          <Typography variant="body2" p={2} fontWeight="bold">
             {project.name}
           </Typography>
           <Link href="/projects" underline="none">

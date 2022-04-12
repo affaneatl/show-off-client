@@ -5,6 +5,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "animate.css";
 import Spinner from './components/Spinner';
+import { ThemeProvider } from '@mui/material/styles';
+import theme from './Themes/Custom2';
 const NavBar = React.lazy(() => import("./views/NavBar"));
 const AppFooter = React.lazy(() => import("./views/AppFooter"));
 const Home = React.lazy(() => import("./pages/Home"));
@@ -16,10 +18,10 @@ const LatestUpdate = React.lazy(() => import("./pages/LatestUpdate"));
 const NewsDetails = React.lazy(() => import("./views/NewsDetails"));
 const Contact = React.lazy(() => import("./pages/Contact"));
 const NotFound = React.lazy(() => import("./views/NotFound"));
-
 AOS.init();
 function App() {
   return (
+    <ThemeProvider theme={theme}>
     <Suspense fallback={<Spinner/>}>
       <div className="App custombg1">
         <NavBar />
@@ -37,6 +39,7 @@ function App() {
         <AppFooter />
       </div>
     </Suspense>
+    </ThemeProvider>
   );
 }
 
