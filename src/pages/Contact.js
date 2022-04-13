@@ -46,6 +46,15 @@ function Contact() {
                 <Box
                   sx={{
                     display: "flex",
+                    justifyContent: "center",
+                  }}
+                >
+                  <LocationOnIcon fontSize="small" />
+                  <span style={{ marginLeft: "10px" }}>Branch Office: BDBL Bhaban, 8th Floor, Kawran Bazar, Dhaka-1205, Bangladesh</span>
+                </Box>
+                <Box
+                  sx={{
+                    display: "flex",
                     alignItems: "center",
                   }}
                 >

@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 import "animate.css";
 import Spinner from './components/Spinner';
 import { ThemeProvider } from '@mui/material/styles';
-import theme from './Themes/Custom2';
+import theme from './theme';
 const NavBar = React.lazy(() => import("./views/NavBar"));
 const AppFooter = React.lazy(() => import("./views/AppFooter"));
 const Home = React.lazy(() => import("./pages/Home"));

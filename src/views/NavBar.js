@@ -6,7 +6,7 @@ import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import Zoom from "@mui/material/Zoom";
 import ResponsiveAppBar from "../components/ResponsiveAppBar";
 import { Container, Stack } from "@mui/material";
-import YouTubeIcon from "@mui/icons-material/YouTube";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
 
 function ScrollTop(props) {
@@ -72,10 +72,10 @@ export default function NavBar(props) {
             </a>
             <a
               className="topnavlink"
-              href="https://www.youtube.com/c/Edutubebd/"
+              href="https://www.LinkedIn.com/company/ethics-advance-technology-limited./"
               target="_blank"
             >
-              <YouTubeIcon
+              <LinkedInIcon
                 fontSize="small"
                 sx={{
                   color: "white",

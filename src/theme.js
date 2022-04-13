@@ -23,7 +23,7 @@ const rawTheme = createTheme({
       dark: red[700],
     },
     success: {
-      light: green[50],
+      light: green[400],
       main: "#f6991e",
       dark: green[700],
     },
