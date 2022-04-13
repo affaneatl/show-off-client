@@ -7,6 +7,7 @@ import Typography from "@mui/material/Typography";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/eatl_logo.png";
 import Slide from "@mui/material/Slide";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
@@ -121,8 +122,8 @@ const ResponsiveAppBar = (props) => {
                   "aria-labelledby": "basic-button",
                 }}
               >
-                <Link
-                  href="/about"
+                <NavLink
+                  to="/about"
                   sx={{
                     mr: 2,
                     flexGrow: 4,
@@ -131,9 +132,9 @@ const ResponsiveAppBar = (props) => {
                   }}
                 >
                   <MenuItem onClick={handleClose}>About EATL</MenuItem>
-                </Link>
-                <Link
-                  href="/directors-message"
+                </NavLink>
+                <NavLink
+                  to="/directors-message"
                   sx={{
                     mr: 2,
                     flexGrow: 4,
@@ -142,13 +143,11 @@ const ResponsiveAppBar = (props) => {
                   }}
                 >
                   <MenuItem onClick={handleClose}>Director's Message</MenuItem>
-                </Link>
+                </NavLink>
               </Menu>
 
               {pages.map((page, index) => (
                 <Button
-                  key={index}
-                  href={page.route}
                   onClick={handleCloseNavMenu}
                   sx={{
                     my: 2,
@@ -158,7 +157,15 @@ const ResponsiveAppBar = (props) => {
                     color: "primary.main",
                   }}
                 >
-                  {page.name}
+                  <NavLink
+                    to={page.route}
+                    style={{ display: "block" }}
+                    className={({ isActive }) =>
+                      isActive ? "active" : "inactive"
+                    }
+                  >
+                    {page.name}
+                  </NavLink>
                 </Button>
               ))}
             </Box>
@@ -193,28 +200,28 @@ const ResponsiveAppBar = (props) => {
               >
                 {pages.map((page, index) => (
                   <MenuItem key={index} onClick={handleCloseNavMenu}>
-                    <Link
+                    <NavLink
                       key={index}
-                      href={page.route}
+                      to={page.route}
                       sx={{ textDecoration: "none" }}
                     >
                       {page.name}
-                    </Link>
+                    </NavLink>
                     <Divider orientation="vertical" />
                   </MenuItem>
                 ))}
                 <MenuItem onClick={handleCloseNavMenu}>
-                  <Link href="/about" sx={{ textDecoration: "none" }}>
+                  <NavLink to="/about" sx={{ textDecoration: "none" }}>
                     About Eatl
-                  </Link>
+                  </NavLink>
                 </MenuItem>
                 <MenuItem onClick={handleCloseNavMenu}>
-                  <Link
-                    href="/directors-message"
+                  <NavLink
+                    to="/directors-message"
                     sx={{ textDecoration: "none" }}
                   >
                     Directors Message
-                  </Link>
+                  </NavLink>
                 </MenuItem>
               </Menu>
             </Box>
