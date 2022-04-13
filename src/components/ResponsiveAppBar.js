@@ -104,11 +104,11 @@ const ResponsiveAppBar = (props) => {
                 aria-haspopup="true"
                 aria-expanded={open ? "true" : undefined}
                 onClick={handleClick}
-                color="primary"
                 sx={{
                   display: { xs: "none", md: "flex" },
                   fontSize: "16px",
                   fontWeight: "bold",
+                  color: "#383838"
                 }}
               >
                 About
