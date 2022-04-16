@@ -1,8 +1,6 @@
 import { Container, Grid, Stack } from "@mui/material";
 import React from "react";
 import Typography from "../components/Typography";
-import DeveloperModeIcon from "@mui/icons-material/DeveloperMode";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { Box } from "@mui/system";
 const services = [
   {
@@ -40,7 +38,11 @@ const services = [
 ];
 function Services() {
   return (
-    <Container sx={{ mt: 8, mb: 4 }} data-aos="fade-right" data-aos-duration="1500">
+    <Container
+      sx={{ mt: 8, mb: 4 }}
+      data-aos="fade-right"
+      data-aos-duration="1500"
+    >
       <Typography
         variant="h4"
         marked="center"
@@ -50,11 +52,7 @@ function Services() {
       >
         Services We Provide
       </Typography>
-      <Typography
-        variant="subtitle1"
-        gutterBottom
-        align="center"
-      >
+      <Typography variant="subtitle1" gutterBottom align="center">
         We are building software solution that solves your business challenges
       </Typography>
       <Grid container spacing={3} sx={{ marginTop: 2 }}>
@@ -70,6 +68,8 @@ const ServiceCard = ({ service }) => {
   return (
     <Grid item md={3} xs={12}>
       <Box
+        component="a"
+        href="/service-details"
         sx={{
           bgcolor: "primary.main",
           display: "flex",

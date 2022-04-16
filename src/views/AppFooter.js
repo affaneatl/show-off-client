@@ -18,33 +18,33 @@ export default function AppFooter() {
               </Typography>
               <Stack direction="row" spacing={2} sx={{ marginTop: "10px" }}>
               <a
-              className="topnavlink"
+              className="footer-link"
               href="https://www.facebook.com/Ethics-Advance-Technology-Ltd-431994670167861/"
               target="_blank"
             >
               <FacebookIcon
                 fontSize="small"
                 sx={{
-                  color: "success.light",
+                  color: "warning.main",
                   "&:hover": {
                     cursor: "pointer",
-                    color: "success.main",
+                    color: "warning.main",
                   },
                 }}
               />
             </a>
             <a
-              className="topnavlink"
+              className="footer-link"
               href="https://www.LinkedIn.com/company/ethics-advance-technology-limited./"
               target="_blank"
             >
               <LinkedInIcon
                 fontSize="small"
                 sx={{
-                  color: "success.light",
+                  color: "warning.main",
                   "&:hover": {
                     cursor: "pointer",
-                    color: "success.main",
+                    color: "warning.main",
                   },
                 }}
               />
@@ -54,7 +54,7 @@ export default function AppFooter() {
           </Grid>
           <Grid item md={5} sm={6}>
             <Stack>
-              <Typography color="success.main" variant="body1" fontSize="18px" fontWeight="bold" marginBottom="20px">
+              <Typography fontWeight="bold" textTransform="uppercase" color="white" variant="body1" fontSize="18px" fontWeight="bold" marginBottom="20px">
                 Address
               </Typography>
               <Typography color='white' variant="body1">
@@ -66,12 +66,12 @@ export default function AppFooter() {
           </Grid>
           <Grid item md={3} sm={6}>
             <Stack>
-              <Typography color="success.main" variant="body1" fontSize="18px"  fontWeight="bold" marginBottom="20px">
+              <Typography fontWeight="bold" textTransform="uppercase" color="white" variant="body1" fontSize="18px"  fontWeight="bold" marginBottom="20px">
                 Important Links
               </Typography>
-              <Link sx={{color: "success.light"}}  href="http://edutubebd.com" target="_blank">Edutube</Link>
-              <Link sx={{color: "success.light"}}  href="http://edutubebd.com" target="_blank">EATL innovation Hub</Link>
-              <Link sx={{color: "success.light"}}  href="http://edutubebd.com" target="_blank">Career</Link>
+              <Link sx={{color: "warning.main"}} className="footer-link" href="http://edutubebd.com" target="_blank">Edutube</Link>
+              <Link sx={{color: "warning.main"}} className="footer-link"  href="http://edutubebd.com" target="_blank">EATL innovation Hub</Link>
+              <Link sx={{color: "warning.main"}} className="footer-link" href="http://edutubebd.com" target="_blank">Career</Link>
             </Stack>
           </Grid>
         </Grid>

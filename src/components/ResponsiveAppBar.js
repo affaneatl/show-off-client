@@ -3,7 +3,6 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
@@ -87,7 +86,7 @@ const ResponsiveAppBar = (props) => {
                 textDecoration: "none",
               }}
             >
-              <img src={logo} style={{ height: "50px" }} />
+              <img src={logo} style={{ height: "60px" }} />
             </Link>
             <Box
               sx={{
@@ -130,6 +129,9 @@ const ResponsiveAppBar = (props) => {
                     display: { xs: "none", md: "flex" },
                     textDecoration: "none",
                   }}
+                  className={({ isActive }) =>
+                  isActive ? "active" : "inactive"
+                }
                 >
                   <MenuItem onClick={handleClose}>About EATL</MenuItem>
                 </NavLink>
@@ -141,6 +143,9 @@ const ResponsiveAppBar = (props) => {
                     display: { xs: "none", md: "flex" },
                     textDecoration: "none",
                   }}
+                  className={({ isActive }) =>
+                  isActive ? "active" : "inactive"
+                }
                 >
                   <MenuItem onClick={handleClose}>Director's Message</MenuItem>
                 </NavLink>

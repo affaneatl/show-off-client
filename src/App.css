@@ -266,6 +266,7 @@ br {
 }
 .footer-link:hover {
   text-decoration: underline;
+  color: white;
 }
 .foooter-bg {
   background-color: #330033;
@@ -288,4 +289,7 @@ a:active, a:hover {
 }
 a{
   text-decoration: none;
+}
+.span-list {
+  font-weight: 600;
 }

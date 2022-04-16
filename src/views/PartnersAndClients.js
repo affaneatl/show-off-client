@@ -11,12 +11,30 @@ import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper";
 
 const partners = [
-  "Ministry of Health",
-  "BGC trust college",
-  "National board of Revenue",
-  "Dhaka WASA",
-  "Desco",
-  "SEQAEP",
+  {
+    title: "Ministry of Health",
+    link: "http://www.mohfw.gov.bd/",
+  },
+  {
+    title: "BGC trust college",
+    link: "https://www.bgctub-edu.net/php_files/standard/user_home/user_home.php?home=yes&tm=main",
+  },
+  {
+    title: "National board of Revenue",
+    link: "https://nbr.gov.bd/",
+  },
+  {
+    title: "Dhaka WASA",
+    link: "http://www.dwasa.org.bd/",
+  },
+  {
+    title: "Desco",
+    link: "https://www.desco.org.bd/bangla/",
+  },
+  {
+    title: "SEQAEP",
+    link: "http://www.moedu.gov.bd/site/page/85e59742-134c-4888-bd08-bf286f038fdd/%E0%A6%B8%E0%A7%87%E0%A6%95%E0%A6%BE%E0%A7%9F%E0%A7%87%E0%A6%AA",
+  },
 ];
 
 function PartnersAndClients() {
@@ -97,15 +115,20 @@ function PartnersAndClients() {
               }}
             >
               <Typography
+                component="a"
+                href={partner.link}
+                target="_blank"
                 p={2}
                 sx={{
-                  fontWeight:"regular",
+                  fontWeight: "regular",
+                  color: "white",
                   "&:hover": {
+                    color: "white",
                     border: "2px solid white",
                   },
                 }}
               >
-                {partner}
+                {partner.title}
               </Typography>
             </Card>
           </SwiperSlide>

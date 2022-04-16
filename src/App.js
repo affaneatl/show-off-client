@@ -18,6 +18,7 @@ const LatestUpdate = React.lazy(() => import("./pages/LatestUpdate"));
 const NewsDetails = React.lazy(() => import("./views/NewsDetails"));
 const Contact = React.lazy(() => import("./pages/Contact"));
 const NotFound = React.lazy(() => import("./views/NotFound"));
+const ServiceDetails = React.lazy(() => import("./views/ServiceDetails"));
 AOS.init();
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path="/products" element={<AllProducts />} />
           <Route path="/latest-update" element={<LatestUpdate />} />
           <Route path="/news-details" element={<NewsDetails />} />
+          <Route path="/service-details" element={<ServiceDetails />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <AppFooter />
